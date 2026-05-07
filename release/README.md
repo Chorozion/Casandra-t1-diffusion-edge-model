@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0bf6f25c6489c445b62a179c813a15705271fb2dd489ede8f515e684f39fded
-size 341
+# Cassandra T1 Release Artifacts
+
+This directory is reserved for packaged open-release artifacts such as tokenizer bundles, model cards, checksums, example prompts, and reproducible inference packages.
+
+Git LFS is configured for this directory.
+
+Do not place unrelated application archives, dependency folders, or private build output here.
