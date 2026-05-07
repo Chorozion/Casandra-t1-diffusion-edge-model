@@ -17,3 +17,7 @@ coverage/
 *.tar
 *.tar.gz
 
+!weights/
+!weights/**
+!release/
+!release/**
