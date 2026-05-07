@@ -1,106 +1,138 @@
-# Cassandra T1 Model Architecture
+# Cassandra T1 Diffusion Edge Model
 
-Cassandra T1 is a compact masked diffusion language model from SophiaXT. It is designed around parallel token denoising, PDE-inspired lattice scheduling, edge deployment, and workflow-specific reasoning.
+Cassandra T1 is an early architecture concept and technical showcase for SophiaXT. It demonstrates a working direction for a masked-diffusion language model stack, including architecture documentation, inference interface design, configuration placeholders, and platform integration patterns. The current version has completed only 5 training epochs and should be treated as a proof of concept rather than a production-ready model.
 
-This is the architecture concept and technical showcase for Cassandra T1, an early 5-epoch SophiaXT masked-diffusion language model prototype.
+## Current Status
 
-This repository documents the public model architecture, information architecture, demo surface, and internal benchmark plan for Cassandra T1. It does not include model weights, private datasets, secrets, or production infrastructure credentials.
+Cassandra T1 is currently a public technical showcase, not a finished production model. Based on the files present in this repository, the project contains documentation, a placeholder TypeScript demo client, environment placeholders, and release-safety notes. No model weights, real training script, tokenizer files, dataset loader, evaluation harness, package manifest, server implementation, Dockerfile, or production deployment configuration were found in the current repository.
 
-## Quick Facts
+## What Cassandra T1 Demonstrates
 
-| Area | Cassandra T1 |
-| --- | --- |
-| Model class | Masked diffusion language model |
-| Parameter target | 1.33B |
-| Generation mode | Parallel denoising |
-| Solver target | 8-16 denoising steps |
-| Context target | 128K |
-| Positioning | Edge-native workflow reasoning model |
-| Deployment target | Consumer GPU, edge GPU, and optimized CPU/phone-class inference |
+- A SophiaXT masked-diffusion language model concept.
+- A parallel denoising generation interface.
+- A PDE-lattice scheduling concept for masked token refinement.
+- A developer-facing model loading and generation API shape.
+- A release-preparation structure for future training, inference, benchmark, and deployment work.
+- A disciplined public documentation approach that separates architecture intent from unverified production claims.
 
-## Why Cassandra Exists
+## Architecture Overview
 
-Autoregressive language models generate one token at a time. Cassandra T1 treats the sequence as a field: the model starts with masked positions and iteratively denoises the entire sequence in parallel.
+The repository describes Cassandra T1 as a masked-diffusion language model. Instead of producing text strictly one token at a time like an autoregressive model, the intended design starts from masked token positions and refines the sequence over multiple denoising steps.
 
-The design goal is to approach the quality envelope of strong autoregressive reference models while reducing the number of forward passes needed for longer generations.
+The current code does not include the actual neural network model implementation. The available `examples/cassandra.demo.ts` file defines a placeholder `CassandraT1Client` with:
 
-## Repository Map
+- `CassandraLoadOptions`
+- `CassandraGenerateOptions`
+- `CassandraOutput`
+- `CassandraT1Client.load(...)`
+- `CassandraT1Client.generate(...)`
 
-- [Architecture Overview](docs/architecture-overview.md)
-- [Information Architecture](docs/information-architecture.md)
-- [Benchmark Methodology](docs/benchmark-methodology.md)
-- [Demo Interface](docs/demo-interface.md)
-- [Release Safety Notes](docs/release-safety.md)
-- [Example TypeScript Client](examples/cassandra.demo.ts)
+The example supports the following conceptual options:
 
-## Public Benchmark Position
+- solver: `pde-lattice` or `standard-diffusion`
+- steps: `8`, `12`, or `16`
+- device: `cpu`, `edge-gpu`, or `cuda`
+- output format: `text`, `json`, `code`, or `report`
 
-The current website copy describes Cassandra T1 as targeting roughly a 98% quality envelope against a Gemma-style autoregressive reference across internal evaluation categories. Those numbers should be treated as internal benchmark targets until public reproducible evaluations and released model weights are available.
+## Training Status
 
-This repository separates:
+The repository should be understood as representing an early 5-epoch Cassandra T1 prototype. The codebase does not currently include the training script, optimizer setup, loss function, dataset loader, checkpointing logic, tokenizer files, or training configuration that produced those 5 epochs.
 
-- **Current architecture claims:** public design intent and implementation shape.
-- **Internal benchmark board:** preliminary or target measurements.
-- **Public benchmark release:** future reproducible evaluation with datasets, prompts, scoring scripts, and model hashes.
+That means the repository can document the architecture concept and intended flow, but it should not be used to verify final model quality, production readiness, or benchmark leadership.
 
-## Core Architecture
+## Inference Overview
 
-```mermaid
-flowchart LR
-  A[Prompt + Context] --> B[Mask Initialization]
-  B --> C[PDE Lattice Schedule]
-  C --> D[Parallel Denoising Transformer]
-  D --> E[Confidence Scoring]
-  E --> F[Refinement Pass]
-  F --> G[Decoded Output]
-  E -->|low confidence spans| C
+The current inference example is a mock client. It shows the intended API shape for loading Cassandra T1 and calling `generate`, but it does not run real model inference.
+
+The placeholder `generate` method returns:
+
+- demo text
+- a confidence value
+- a small list of denoising-step summaries
+
+This is useful for explaining the intended interface, but it is not evidence of deployed runtime inference.
+
+## Technology Stack
+
+Based on the files currently present:
+
+- Language: TypeScript example code
+- Documentation: Markdown
+- License: Apache License 2.0
+- Configuration placeholders: `.env.example`
+- ML framework: not found in the current repository
+- Training framework: not found in the current repository
+- Serving framework: not found in the current repository
+- Deployment tooling: not found in the current repository
+- Test framework: not found in the current repository
+
+## Repository Structure
+
+```text
+.
+├── README.md
+├── LICENSE
+├── PUBLICATION_CHECKLIST.md
+├── .env.example
+├── docs/
+│   ├── overview.md
+│   ├── architecture.md
+│   ├── model-development.md
+│   ├── training-settings.md
+│   ├── inference-design.md
+│   ├── technology-stack.md
+│   ├── limitations.md
+│   ├── roadmap.md
+│   ├── architecture-overview.md
+│   ├── benchmark-methodology.md
+│   ├── demo-interface.md
+│   ├── information-architecture.md
+│   └── release-safety.md
+├── examples/
+│   └── cassandra.demo.ts
+└── showcase/
+    ├── sophiaxt-stack.md
+    └── cassandra-t1-showcase.md
 ```
 
-## Generation Loop
+## Limitations
 
-```mermaid
-sequenceDiagram
-  participant User
-  participant Runtime
-  participant Scheduler
-  participant Cassandra
-  participant Decoder
+- Only 5 training epochs are currently stated.
+- No model weights are included.
+- No real training script was found.
+- No tokenizer files were found.
+- No dataset loader was found.
+- No evaluation scripts or formal benchmark reports were found.
+- The TypeScript demo is explicitly a placeholder and does not perform real inference.
+- No production deployment configuration was found.
+- No commercial deployment evidence was found in the repository.
 
-  User->>Runtime: prompt + constraints
-  Runtime->>Scheduler: initialize masked sequence field
-  Scheduler->>Cassandra: denoise all token positions
-  Cassandra->>Scheduler: logits + confidence map
-  Scheduler->>Cassandra: refine uncertain spans
-  Scheduler->>Decoder: final token field
-  Decoder->>User: output text + confidence metadata
-```
+## Roadmap
 
-## Example
+Short-term priorities:
 
-```ts
-import { CassandraT1 } from "@sophiaxt/cassandra";
+- Add the actual model definition or clearly mark it as private if not intended for release.
+- Add training configuration files.
+- Add tokenizer references or tokenizer build instructions.
+- Add checkpoint loading and saving documentation.
+- Add reproducible evaluation scripts.
+- Add a minimal real inference path or server stub if appropriate.
+- Separate benchmark targets from measured benchmark results.
 
-const model = await CassandraT1.load({
-  weights: "cassandra-t1-int4.gguf",
-  solver: "pde-lattice",
-  steps: 12,
-  device: "edge-gpu",
-});
+Longer-term priorities:
 
-const output = await model.generate({
-  prompt: "Summarize this repair log and route the next action.",
-  maxTokens: 512,
-  mode: "parallel-denoise",
-});
+- Publish model hashes for released weights.
+- Add dataset documentation.
+- Add safety and misuse notes.
+- Add hardware profiles.
+- Add CI checks for examples and documentation.
+- Add a public demo backend only if it can be secured properly.
 
-console.log(output.text);
-```
+## Security Note
 
-## Status
+Do not commit secrets, model credentials, API keys, private datasets, customer records, or unreleased model weights. The `.gitignore` blocks common model-weight and secret file patterns, but repository safety still requires manual review before every release.
 
-Cassandra T1 is documented as a SophiaXT model-family architecture package. Treat this repository as a public technical architecture and release-preparation repository, not a weights release.
+## Disclaimer
 
-## Ownership
-
-Copyright 2026 SophiaXT LLC. All rights reserved unless a separate license file is added.
+Cassandra T1 is an early SophiaXT architecture concept and technical showcase. It is not presented as a finished production model, commercially validated product, or benchmark-leading public release. Any benchmark or performance language should be treated as preliminary unless accompanied by reproducible scripts, model hashes, datasets, and runtime settings.
 
