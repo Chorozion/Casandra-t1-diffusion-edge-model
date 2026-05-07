@@ -2,6 +2,8 @@
 
 Cassandra T1 is a compact masked diffusion language model from SophiaXT. It is designed around parallel token denoising, PDE-inspired lattice scheduling, edge deployment, and workflow-specific reasoning.
 
+This is the architecture concept and technical showcase for Cassandra T1, an early 5-epoch SophiaXT masked-diffusion language model prototype.
+
 This repository documents the public model architecture, information architecture, demo surface, and internal benchmark plan for Cassandra T1. It does not include model weights, private datasets, secrets, or production infrastructure credentials.
 
 ## Quick Facts
