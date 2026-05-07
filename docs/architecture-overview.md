@@ -1,80 +1,54 @@
 # Architecture Overview
 
-Cassandra T1 is a masked diffusion language model that generates a sequence by repeatedly denoising all token positions in parallel. Its architecture is designed for workflow reasoning, edge inference, long-context synthesis, and structured operational tasks.
+Cassandra T1 is documented as a masked-diffusion language model concept. The current repository does not include the actual neural network implementation, so this file describes the architecture direction and the interface currently present in the public codebase.
 
 ## Answer First: What Is Cassandra T1?
 
-Cassandra T1 is a compact diffusion language model that solves from masked uncertainty toward readable output through a PDE-inspired denoising schedule. It is designed to reduce sequential generation bottlenecks common in autoregressive models.
+Cassandra T1 is an early SophiaXT architecture concept for masked-diffusion language generation. The public repository currently contains documentation and a placeholder TypeScript demo client, not a complete model runtime.
 
 ## Design Goals
 
-- Generate many token positions in parallel.
-- Reduce long-generation latency by using 8-16 refinement steps instead of one forward pass per output token.
-- Preserve ordered reasoning for workflow, logistics, diagnostics, document QA, and code repair prompts.
-- Support edge deployment through quantized packages.
-- Expose confidence maps so uncertain spans can be refined selectively.
+- Explore parallel token denoising instead of strict left-to-right generation.
+- Document a future PDE-lattice scheduling concept.
+- Provide a developer-facing load/generate interface shape.
+- Prepare the repo for future tokenizer, training, inference, evaluation, and deployment assets.
+- Keep the 5-epoch proof-of-concept status clear.
 
-## High-Level Components
+## Components Present In The Repository
 
-### 1. Context Encoder
+- `examples/cassandra.demo.ts`: placeholder TypeScript demo client.
+- `.env.example`: placeholder endpoint variables.
+- Markdown documentation.
+- Apache 2.0 license.
 
-The context encoder receives prompt text, task metadata, retrieved documents, workflow state, and optional structured constraints. Its role is to convert business or technical context into a representation that can seed the denoising field.
+## Components Not Present
 
-### 2. Mask Initialization
+No actual transformer implementation, embedding layer, attention layer, tokenizer, diffusion scheduler, loss function, optimizer, dataset loader, checkpoint loader, or serving layer was found.
 
-Instead of starting from the first token and moving left-to-right, Cassandra initializes a masked output field. Tokens begin as unknown spans, anchors, or partially constrained regions.
-
-### 3. PDE Lattice Scheduler
-
-The scheduler controls how much uncertainty remains at each denoising step. A smooth S-curve schedule is used as a design target:
-
-```text
-gamma(t) = 1 - (3t^2 - 2t^3)
-```
-
-The schedule starts broadly, establishes semantic anchors, and then concentrates refinement on low-confidence spans.
-
-### 4. Parallel Denoising Transformer
-
-The denoising transformer predicts token distributions across the sequence in parallel. Each step updates the entire field instead of appending a single next token.
-
-### 5. Confidence Map
-
-Each token position receives a confidence score. The runtime can preserve high-confidence spans and re-mask low-confidence spans for additional refinement.
-
-### 6. Decoder
-
-The decoder converts the final denoised field into readable text, structured JSON, code, or other supported output formats.
-
-## Architectural Diagram
+## Conceptual Architecture
 
 ```mermaid
 flowchart TD
-  A[Input Context] --> B[Context Encoder]
-  B --> C[Masked Output Field]
-  C --> D[PDE Lattice Scheduler]
-  D --> E[Parallel Denoising Transformer]
-  E --> F[Token Distribution Field]
-  F --> G[Confidence Map]
-  G -->|high confidence| H[Preserve Spans]
-  G -->|low confidence| I[Selective Re-mask]
-  I --> D
-  H --> J[Decoder]
-  J --> K[Final Output]
+  A[Prompt] --> B[Load/Generate Interface]
+  B --> C[Future Masked Token Field]
+  C --> D[Future Denoising Scheduler]
+  D --> E[Future Model Runtime]
+  E --> F[Output Text + Confidence Metadata]
 ```
+
+This diagram reflects the intended direction. It is not a representation of complete code currently present in the repository.
 
 ## Intended Use Cases
 
 - Workflow summaries
-- Dispatch and routing recommendations
-- Technical diagnostic reasoning
-- Repair log analysis
+- Dispatch or routing notes
+- Repair-log analysis
 - Document QA
 - Code repair prompts
 - Structured business reports
-- Local or edge inference where latency and footprint matter
+- Local or edge-oriented assistant workflows
 
 ## Non-Goals
 
-Cassandra T1 is not positioned as a universal replacement for large autoregressive foundation models. It is designed for constrained workflow reasoning and efficient generation where parallel refinement is a practical advantage.
+Cassandra T1 is not presented as a production-ready model, a benchmark-leading release, or a universal replacement for autoregressive language models.
 
