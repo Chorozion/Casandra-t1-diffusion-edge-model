@@ -18,7 +18,7 @@ The central idea is simple but technically demanding: generate language by refin
 
 ## Current Maturity
 
-The epoch-5 checkpoint shows that the architecture can train and produce a checkpoint usable by the release inference path. It is still rough. Source notes describe short factual answers as more usable than long-form generation, while identity consistency and extended coherence need more training.
+The epoch-5 checkpoint shows that the architecture can train and produce a checkpoint usable by the release inference path. Source notes describe short factual answers as more usable than long-form generation, while identity consistency and extended coherence need more training.
 
 The latest v2 scratch checkpoint is included because it is the newest artifact found in the source directory. It is not described as the best checkpoint. Current comparison notes indicate instability, so it should be evaluated carefully before being treated as a successor to epoch 5.
 

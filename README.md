@@ -4,7 +4,7 @@ Cassandra T1 is an experimental SophiaXT language-model prototype built around m
 
 ## Release Position
 
-Cassandra T1 is a lab-stage architecture validation release. The purpose is to show the model family direction clearly: compact diffusion-style language generation, parallel masked-token refinement, PDE-inspired unmask scheduling, and a path toward edge-deployable SophiaXT models. The release is intentionally transparent about what works, what is measured, and what is still rough.
+Cassandra T1 is a lab-stage architecture validation release. The purpose is to show the model family direction clearly: compact diffusion-style language generation, parallel masked-token refinement, PDE-inspired unmask scheduling, and a path toward edge-deployable SophiaXT models. The release is transparent about what is implemented, what is measured, and what still needs evaluation.
 
 The verified epoch-5 checkpoint is the most stable checkpoint included here. The newer v2 scratch checkpoint is included because it is the latest artifact found in the source model directory, but current comparison notes indicate that newer checkpoint is not automatically better. Both artifacts are research checkpoints.
 
@@ -141,7 +141,7 @@ The next training cycle should focus on stability, identity consistency, instruc
 
 ## Limitations
 
-Cassandra T1 is not production-ready. The epoch-5 checkpoint is real and verified, but it still produces rough long-form output. The latest v2 scratch checkpoint is included, but comparison notes suggest it may be less coherent than epoch 5. No formal public benchmark suite is included yet. Training datasets are excluded. Quantized formats are not included because the custom architecture is not currently supported by the standard GGUF conversion path.
+Cassandra T1 is not production-ready. The epoch-5 checkpoint is verified, but long-form output still needs improvement. The latest v2 scratch checkpoint is included, but comparison notes suggest it may be less coherent than epoch 5. No formal public benchmark suite is included yet. Training datasets are excluded. Quantized formats are not included because the custom architecture is not currently supported by the standard GGUF conversion path.
 
 ## License
 

@@ -1,6 +1,6 @@
 # Cassandra T1 Open Release
 
-Cassandra T1 is SophiaXT's experimental masked-diffusion language model prototype. This release includes real checkpoints, tokenizer artifacts, PyTorch model code, scheduler code, training scripts, and inference scripts. It is a serious architecture proof of concept, not a polished production assistant.
+Cassandra T1 is SophiaXT's experimental masked-diffusion language model prototype. This release includes checkpoints, tokenizer artifacts, PyTorch model code, scheduler code, training scripts, and inference scripts for technical review.
 
 ## What It Shows
 
@@ -34,7 +34,7 @@ This prototype is a step toward SophiaXT models that can be inspected, trained, 
 
 ## Current Limits
 
-- Long-form output remains rough.
+- Long-form output needs additional training and evaluation.
 - Identity behavior is not fully reliable.
 - No formal public benchmark suite is included yet.
 - Training data is not included.

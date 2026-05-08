@@ -108,4 +108,4 @@ The release includes checkpoint hashes, file sizes, and training-loss notes. It 
 
 The spatial-token module is included because it is part of the architecture direction. Source notes indicate spatial tokens were designed but not fully active in the epoch-5 training data path. The correct claim is therefore architectural readiness, not trained spatial mastery.
 
-The release should be read as a serious prototype: real code, real weights, real limitations.
+The release documents the implementation and checkpoint state directly so future work can be evaluated against the current baseline.
