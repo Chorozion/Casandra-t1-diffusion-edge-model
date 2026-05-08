@@ -1,33 +1,20 @@
 # Cassandra T1 Overview
 
-Cassandra T1 is an early SophiaXT architecture concept for a masked-diffusion language model. The repository exists to document and demonstrate the direction of the system rather than to publish a finished production model.
+Cassandra T1 is an experimental SophiaXT masked-diffusion language model release. The repository includes real model source code, scheduler code, training scripts, inference scripts, tokenizer artifacts, and released checkpoints.
 
-## What This Project Is
+The project explores whether a small-to-mid-size language model can generate text through iterative masked-token denoising instead of purely autoregressive next-token prediction. This release should be treated as a research checkpoint package and architecture showcase, not a finished production assistant.
 
-Cassandra T1 is presented as a proof-of-concept model-family component for SophiaXT. The available repository shows the intended architecture vocabulary, a placeholder TypeScript inference interface, release-safety notes, and documentation around masked diffusion, denoising steps, and platform integration.
+## Included in This Release
 
-## Why It Exists
+- PyTorch model architecture in `src/model/`.
+- PDE lattice and diffusion scheduler code in `src/scheduler/`.
+- Training scripts in `src/train/`.
+- Inference and serving scripts in `scripts/`.
+- Tokenizer artifact in `release/tokenizer.json`.
+- Epoch-5 verified checkpoint and newest v2 scratch checkpoint in `weights/`, split into Git LFS parts under 2 GB each.
 
-The project explores whether a SophiaXT language model stack can move beyond strictly autoregressive generation. The core idea is to start with masked token positions and refine the output through multiple denoising steps, potentially improving generation efficiency for structured workflow tasks once a real model implementation is available.
+## Current Maturity
 
-## What It Demonstrates
+The epoch-5 checkpoint is documented by the source project as a verified checkpoint with loss around `2.2561`. Longer generations remain rough. The v2 scratch epoch-2 checkpoint is included because it is the newest checkpoint found in the source directory, but available comparison output indicates it is not necessarily better than epoch 5.
 
-Based on the current repository, Cassandra T1 demonstrates:
-
-- A masked-diffusion model concept.
-- A denoising-step API surface.
-- A loader/generator TypeScript interface.
-- A preliminary edge-runtime direction.
-- A documentation structure for future public release.
-- A clear separation between architecture goals and production claims.
-
-## Current Stage
-
-The current model is described as having completed 5 training epochs. The repository does not include the training code, weights, tokenizer files, dataset loader, benchmark scripts, or deployment setup needed to independently reproduce or validate the model.
-
-This should be treated as a technical architecture showcase and proof of concept.
-
-## What Is Not Present
-
-No production deployment configuration was found. No formal benchmark results were found in the repository. No model weights were found. No real inference backend was found. No dataset or tokenizer assets were found.
-
+No private datasets, secrets, or server credentials are included.

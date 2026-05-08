@@ -32,7 +32,7 @@ class CassandraT1Client {
   }
 
   async generate(options: CassandraGenerateOptions): Promise<CassandraOutput> {
-    // Demo-only placeholder. Do not treat this as model inference.
+    // Interface sketch only. Use the Python scripts for released checkpoint inference.
     return {
       text: `Cassandra demo output for: ${options.prompt}`,
       confidence: 0.87,
@@ -67,4 +67,3 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
-

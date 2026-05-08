@@ -1,91 +1,34 @@
 # Inference Design
 
-The current repository includes a placeholder TypeScript inference example. It documents the intended client interface, but it does not perform real model inference.
+The release includes real Python inference scripts for Cassandra T1.
 
-## Entry Point Scripts
+## Entry Points
 
-Found:
-
-- `examples/cassandra.demo.ts`
-
-Not found:
-
-- production inference server
-- CLI generation script
-- Python inference script
-- checkpoint loader
-- tokenizer loader
-- model runtime implementation
+- `scripts/run_cassandra.py`: interactive local CUDA inference for the epoch-5 checkpoint.
+- `scripts/chunk_gen.py`: chunk-based semi-autoregressive generation experiment.
+- `scripts/serve_ep5.py`: Flask server exposing an OpenAI-style `/v1/chat/completions` endpoint.
+- `src/eval/canary_identity.py`: small identity canary generation helper.
 
 ## Model Loading
 
-The placeholder client exposes:
+The scripts load:
 
-```ts
-static async load(options: CassandraLoadOptions)
-```
+- Checkpoint: `weights/cassandra_ep5_fp16.pt` or the original local path.
+- Tokenizer: `release/tokenizer.json` or the original local path.
+- Architecture: `src/model/sophia_t1.py`.
+- Config: `src/model/config.py`.
 
-The options include:
+Some scripts still contain original absolute paths from `I:\sophiat1` or `/opt/sophiaxt/cassandra`. Adjust these before running in a different environment.
 
-- `weights`
-- `solver`
-- `steps`
-- `device`
+## Generation
 
-The method currently returns a new client instance and includes a comment saying runtime initialization should be connected once weights and inference code are released.
+Cassandra T1 generation appends mask tokens after the prompt, predicts logits over masked positions, samples or ranks candidate tokens, reveals selected tokens over multiple denoising steps, and decodes the generated span.
 
-## Tokenizer Use
+The epoch-5 scripts use nucleus sampling, repetition penalties, chunk generation, and 8-16 denoising steps depending on the entry point.
 
-No tokenizer files or tokenizer loading code were found in the repository.
+## Limitations
 
-## Masking Or Denoising Process
-
-The example does not implement real masking or denoising. It returns a mock step list:
-
-- masked field initialized
-- semantic anchors stabilized
-- decoded output field
-
-This supports the conceptual demo but should not be represented as actual model execution.
-
-## Generation Loop
-
-The intended generation call is:
-
-```ts
-const output = await model.generate({
-  prompt: "Summarize this repair log and route the next action.",
-  maxTokens: 512,
-  mode: "parallel-denoise",
-  outputFormat: "report",
-});
-```
-
-The output shape includes:
-
-- `text`
-- `confidence`
-- `steps`
-
-## Output Format
-
-The TypeScript interfaces support output formats:
-
-- `text`
-- `json`
-- `code`
-- `report`
-
-The placeholder method does not change behavior based on output format yet.
-
-## Current Limitations
-
-- No real model inference.
-- No tokenizer use.
-- No checkpoint loading.
-- No server endpoint.
-- No streaming output.
-- No validation of generation options.
-- No actual masked diffusion loop.
-- No hardware-specific runtime logic.
-
+- Long-form output is still unstable.
+- The newest v2 scratch checkpoint needs evaluation before use.
+- No clean package installer is included yet.
+- No quantized runtime package is included.

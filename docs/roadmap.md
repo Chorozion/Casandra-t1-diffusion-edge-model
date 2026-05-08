@@ -1,61 +1,29 @@
 # Roadmap
 
-This roadmap is based on the current repository state.
+## Short-Term
 
-## Short-Term Cleanup
+- Add `requirements.txt` or `pyproject.toml`.
+- Replace absolute local paths in inference scripts with CLI arguments.
+- Add a minimal checkpoint loading smoke test.
+- Add model card metadata for each checkpoint.
+- Add reproducible evaluation prompts and expected output logging.
 
-- Keep the README aligned with the proof-of-concept status.
-- Remove or qualify unsupported benchmark claims.
-- Add a repository inventory table that distinguishes implemented code from architecture intent.
-- Add instructions for running the placeholder demo if a package file is introduced.
+## Training
 
-## Documentation Improvements
+- Continue training from the best stable checkpoint.
+- Improve identity and instruction-following data.
+- Evaluate whether v2 scratch should supersede epoch 5.
+- Integrate spatial tokens into the active training pipeline if supported by data.
 
-- Add model-card style documentation.
-- Add a reproducibility section.
-- Add hardware and runtime assumptions.
-- Add a glossary for masked diffusion, denoising, confidence maps, and PDE-lattice scheduling.
+## Inference
 
-## Training Improvements
+- Add a clean local CLI.
+- Add CPU/GPU device selection.
+- Add configurable checkpoint path, tokenizer path, max tokens, steps, temperature, and top-p.
+- Add a small server package that does not depend on local SophiaXT paths.
 
-- Add training configuration.
-- Add tokenizer documentation.
-- Add dataset preparation notes.
-- Add checkpoint behavior.
-- Add training logs for the 5-epoch prototype if safe to publish.
-- Add optimizer, batch size, and learning-rate details.
+## Release
 
-## Evaluation Improvements
-
-- Add fixed prompt sets.
-- Add scoring rubrics.
-- Add evaluation scripts.
-- Add latency measurement scripts.
-- Add benchmark artifact versioning.
-- Publish model hashes when weights are released.
-
-## Inference Improvements
-
-- Replace the placeholder TypeScript client with a real runtime or clearly separate mock/demo code.
-- Add model loading.
-- Add tokenizer loading.
-- Add denoising loop implementation.
-- Add output validation.
-- Add error handling.
-- Add streaming or progress events if useful.
-
-## Deployment Improvements
-
-- Add a server implementation only after API security requirements are clear.
-- Add Docker or deployment files if public deployment is intended.
-- Add CI checks.
-- Add secret scanning.
-- Add release tagging.
-
-## Platform Integration Improvements
-
-- Document how Cassandra connects to SophiaXT services.
-- Add a safe integration interface.
-- Add examples for workflow automation, document QA, diagnostic reasoning, and edge inference.
-- Keep private production credentials and customer workflows out of the repository.
-
+- Publish checksums with every model artifact.
+- Add quantized formats if the custom architecture can be converted reliably.
+- Add third-party reproducibility notes.

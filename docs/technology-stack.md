@@ -1,45 +1,34 @@
 # Technology Stack
 
-This file lists technologies that are actually visible in the current repository.
+## Runtime
 
-## Programming Language
+- Python
+- PyTorch
+- Hugging Face `tokenizers`
+- Flask for the included epoch-5 serving script
 
-TypeScript is used in `examples/cassandra.demo.ts` to define the placeholder Cassandra client and interfaces.
+## Model Code
 
-## ML Framework
+- `src/model/sophia_t1.py`
+- `src/model/config.py`
+- `src/model/spatial_tokens.py`
+- `src/scheduler/pde_lattice.py`
+- `src/scheduler/pde_scheduler.py`
 
-No ML framework was found in the current repository. There are no visible imports for PyTorch, TensorFlow, JAX, Transformers, tokenizers, or ONNX Runtime.
+## Training Code
 
-## Serving Framework
+- Scratch pretraining scripts
+- Epoch-5 continuation script
+- Diffusion training script
+- QLoRA experiment script
+- LoRA merge helper
 
-No serving framework was found. There is no Express, FastAPI, Flask, Next.js API route, or model server implementation in this repository.
+## Release Tooling
 
-## Configuration Format
+- Git LFS for checkpoint and tokenizer artifacts
+- Markdown documentation
+- Apache License 2.0
 
-The repository includes `.env.example` with placeholder runtime endpoint variables:
+## Missing Packaging Work
 
-- `CASSANDRA_API_BASE_URL`
-- `CASSANDRA_API_KEY`
-
-No actual config parser or runtime consumer was found.
-
-## Packaging Tools
-
-No `package.json`, `pyproject.toml`, `requirements.txt`, `setup.py`, or lockfile was found in the current repository.
-
-## Deployment Tooling
-
-No Dockerfile, compose file, deployment manifest, or CI workflow was found.
-
-## Testing Tools
-
-No test framework or test files were found.
-
-## Documentation Tools
-
-Markdown is used for documentation. Mermaid diagrams are embedded in Markdown files.
-
-## License
-
-The repository includes the Apache License 2.0.
-
+No `requirements.txt`, `pyproject.toml`, Dockerfile, or CI test workflow is included yet. Those should be added before treating the release as easy to install.

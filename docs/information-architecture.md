@@ -1,35 +1,15 @@
 # Information Architecture
 
-Cassandra T1's information architecture is currently documented as an intended design rather than a complete implementation.
+The repository is organized around the full open release:
 
-## Answer First: How Does Cassandra Organize Information?
+- `weights/`: Git LFS checkpoints.
+- `release/`: tokenizer and non-weight release artifacts.
+- `src/model/`: architecture implementation.
+- `src/scheduler/`: diffusion and PDE scheduling logic.
+- `src/train/`: training and continuation scripts.
+- `src/eval/`: evaluation helpers.
+- `scripts/`: runnable local/server scripts.
+- `docs/`: technical documentation.
+- `showcase/`: public-facing technical showcase pages.
 
-The repository suggests a future system that separates prompts, runtime options, denoising-step metadata, output text, and confidence values. The current implementation only contains the TypeScript interfaces and placeholder response shape.
-
-## Implemented Interface Objects
-
-The example code defines:
-
-- `CassandraLoadOptions`
-- `CassandraGenerateOptions`
-- `CassandraOutput`
-
-## Intended Future Layers
-
-- task layer
-- context layer
-- constraint layer
-- mask field
-- confidence field
-- output layer
-
-These future layers are not implemented in the current repository.
-
-## GitHub Information Architecture
-
-- `README.md`: public summary
-- `docs/`: technical documentation
-- `examples/`: placeholder demo client
-- `showcase/`: investor/developer-facing showcase notes
-- `PUBLICATION_CHECKLIST.md`: release-safety checklist
-
+This structure separates model artifacts, runnable code, technical documentation, and public explanation.

@@ -1,61 +1,40 @@
-# Cassandra T1: Masked-Diffusion Architecture Showcase
+# Cassandra T1 Open Release
 
-## Headline
-
-Cassandra T1 is an early SophiaXT architecture concept for a masked-diffusion language model designed around parallel denoising and edge-oriented inference patterns.
-
-## Summary
-
-Cassandra T1 demonstrates the direction of a SophiaXT model stack that treats generation as iterative refinement rather than strict left-to-right token emission. The current repository is a proof-of-concept documentation and interface package. It is not a completed production model.
+Cassandra T1 is SophiaXT's experimental masked-diffusion language model release. It includes actual checkpoints, tokenizer files, PyTorch architecture code, scheduler logic, and inference scripts.
 
 ## What It Demonstrates
 
-- A masked-diffusion model concept.
-- A PDE-lattice scheduling vocabulary.
-- A TypeScript inference interface shape.
-- A confidence-aware output format.
-- A future path toward edge inference.
-- A public documentation strategy that avoids unsupported production claims.
-
-## Why It Matters
-
-If implemented and validated, a masked-diffusion language model could offer a useful alternative generation pattern for structured workflows, document tasks, diagnostic reasoning, routing summaries, and local assistant behavior. The key idea is to refine the output globally instead of committing to one next token at a time.
+- Masked-token diffusion generation for language.
+- Parallel denoising over multiple generation steps.
+- PDE lattice scheduling experiments.
+- A compact BPE tokenizer and custom transformer architecture.
+- A path from training checkpoint to local/server inference.
 
 ## Current Training Status
 
-Cassandra T1 is currently described as a 5-epoch prototype. The repository does not include training scripts, checkpoints, datasets, tokenizer files, or benchmark scripts. That means the current public repo should be evaluated as an architecture showcase and release-preparation artifact, not as a reproducible model release.
+The release includes:
 
-## Architecture Concept
+- `weights/cassandra_ep5_fp16.pt.part001-002`: verified epoch-5 checkpoint split for GitHub LFS limits.
+- `weights/v2_scratch_epoch2_82002.pt.part001-009`: newest checkpoint found in the source directory, split for GitHub LFS limits.
+- `release/tokenizer.json`: tokenizer used by the released scripts.
 
-The current concept centers on:
+The epoch-5 checkpoint is useful as an architecture validation artifact. It is not a finished assistant. Source notes state that short factual answers work better than long creative output and that additional training is needed.
 
-- masked token fields
-- denoising steps
-- confidence metadata
-- fixed-step generation
-- edge-oriented runtime options
-- structured output modes
+## Why It Matters
 
-The actual neural model implementation is not currently present in the repository.
+Most language model demos stop at a UI. Cassandra T1 exposes the architecture, training path, model weights, tokenizer, and inference code so technical reviewers can inspect the actual system.
 
 ## Current Limitations
 
-- No model weights.
-- No real inference runtime.
-- No training loop.
-- No tokenizer.
-- No evaluation suite.
-- No production deployment configuration.
-- No commercial deployment evidence.
+- Output quality is preliminary.
+- No formal benchmark suite is included.
+- Scripts need path cleanup for portable use.
+- Training data is not included.
+- Quantized deployment formats are not included yet.
 
 ## Next Milestones
 
-1. Publish or reference the actual model definition.
-2. Add training configuration and logs for the 5-epoch prototype.
-3. Add tokenizer documentation.
-4. Add checkpoint loading behavior.
-5. Add reproducible evaluation scripts.
-6. Add a real inference path.
-7. Add CI and safety checks.
-8. Publish benchmark numbers only with reproducible artifacts.
-
+- Add installable Python package metadata.
+- Add reproducible evaluation scripts.
+- Add checkpoint-specific model cards.
+- Continue training and publish updated checkpoints with hashes.

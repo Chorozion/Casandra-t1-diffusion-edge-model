@@ -1,33 +1,13 @@
-# Demo Interface
+# Demo and Interface
 
-The current demo interface is defined in `examples/cassandra.demo.ts`. It is a placeholder and does not perform real model inference.
+The repository includes both a TypeScript interface sketch and real Python inference entry points.
 
-## Answer First: What Does The Demo Do?
+## Python Inference
 
-The demo shows the intended Cassandra client API shape: load a model-like client, call `generate`, and receive text, confidence, and denoising-step metadata. It does not load weights or run a neural model.
+- `scripts/run_cassandra.py` runs local interactive inference.
+- `scripts/chunk_gen.py` tests chunk-based generation.
+- `scripts/serve_ep5.py` exposes an OpenAI-style Flask chat endpoint.
 
-## Current Demo Inputs
+## TypeScript Interface
 
-The TypeScript interfaces define:
-
-- prompt
-- max token count
-- generation mode
-- output format
-- solver
-- step count
-- target device
-- weights path
-
-## Current Demo Output
-
-The placeholder returns:
-
-- demo text
-- confidence value
-- three step summaries
-
-## Current Limitation
-
-The demo is useful for reviewing the intended developer experience. It is not evidence of production inference or model quality.
-
+`examples/cassandra.demo.ts` documents the intended client-side API shape for applications that call a Cassandra backend. It should be treated as interface documentation, while the Python scripts are the real inference entry points in this release.

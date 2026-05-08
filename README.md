@@ -1,70 +1,90 @@
 # Cassandra T1 Diffusion Edge Model
 
-Cassandra T1 is an early architecture concept and technical showcase for SophiaXT. It demonstrates a working direction for a masked-diffusion language model stack, including architecture documentation, inference interface design, configuration placeholders, and platform integration patterns. The current version has completed only 5 training epochs and should be treated as a proof of concept rather than a production-ready model.
+Cassandra T1 is an open SophiaXT masked-diffusion language model release. The repository includes the model architecture code, scheduler code, training/inference scripts, tokenizer, and released PyTorch checkpoints from the Sophia T1/Cassandra T1 development directory.
 
 ## Current Status
 
-Cassandra T1 is currently a public technical showcase, not a finished production model. Based on the files present in this repository, the project contains documentation, a placeholder TypeScript demo client, environment placeholders, and release-safety notes. No model weights, real training script, tokenizer files, dataset loader, evaluation harness, package manifest, server implementation, Dockerfile, or production deployment configuration were found in the current repository.
+Cassandra T1 is an experimental proof-of-concept model, not a production-ready assistant. The public release includes real model artifacts and code, but output quality is still preliminary. The epoch-5 checkpoint is the verified Cassandra checkpoint described in the project notes. The newest checkpoint present in the local release source is the v2 scratch epoch-2 checkpoint from April 22, 2026.
+
+## Released Files
+
+| Path | Purpose | Size | SHA256 |
+|---|---:|---:|---|
+| `weights/cassandra_ep5_fp16.pt.part001-002` | Verified epoch-5 Cassandra T1 FP16 checkpoint, split for GitHub LFS object limits | 2,659,500,664 bytes reassembled | `D70C813C513F5232A25313FA60338F862020BA942ED26D54F62511766FA5F044` |
+| `weights/v2_scratch_epoch2_82002.pt.part001-009` | Latest checkpoint found in `I:\sophiat1`, v2 scratch epoch 2 / step 82002, split for GitHub LFS object limits | 16,665,974,950 bytes reassembled | `8BFB5644209AB8FD241D85A725781495B29922811A2BECF8260AAAAD0A26DA6F` |
+| `release/tokenizer.json` | Cassandra tokenizer | 2,253,607 bytes | `376A9537FCE79B7004237845E6B2C9991661E6BAEEA0B76AF9C9A3C1EB405C4D` |
+
+Large files are stored through Git LFS. The checkpoints are split into parts because GitHub rejects individual LFS objects above 2 GB.
+
+Reassemble on Windows PowerShell:
+
+```powershell
+Get-Content weights\cassandra_ep5_fp16.pt.part* -Encoding Byte -ReadCount 0 | Set-Content weights\cassandra_ep5_fp16.pt -Encoding Byte
+Get-Content weights\v2_scratch_epoch2_82002.pt.part* -Encoding Byte -ReadCount 0 | Set-Content weights\v2_scratch_epoch2_82002.pt -Encoding Byte
+```
+
+Reassemble on Linux/macOS:
+
+```bash
+cat weights/cassandra_ep5_fp16.pt.part* > weights/cassandra_ep5_fp16.pt
+cat weights/v2_scratch_epoch2_82002.pt.part* > weights/v2_scratch_epoch2_82002.pt
+```
 
 ## What Cassandra T1 Demonstrates
 
-- A SophiaXT masked-diffusion language model concept.
-- A parallel denoising generation interface.
-- A PDE-lattice scheduling concept for masked token refinement.
-- A developer-facing model loading and generation API shape.
-- A release-preparation structure for future training, inference, benchmark, and deployment work.
-- A disciplined public documentation approach that separates architecture intent from unverified production claims.
+- A masked-diffusion language model implemented in PyTorch.
+- Parallel token denoising instead of purely left-to-right autoregressive decoding.
+- A custom PDE lattice scheduler for choosing token unmasking steps.
+- Grouped-query attention, RoPE, RMSNorm, SwiGLU feed-forward layers, and a compact BPE vocabulary.
+- Experimental spatial-token vocabulary design.
+- Training scripts for scratch pretraining, continuation training, QLoRA experimentation, and LoRA merge support.
+- Local and Flask-based inference scripts for the epoch-5 checkpoint.
 
 ## Architecture Overview
 
-The repository describes Cassandra T1 as a masked-diffusion language model. Instead of producing text strictly one token at a time like an autoregressive model, the intended design starts from masked token positions and refines the sequence over multiple denoising steps.
+The model code is in `src/model/sophia_t1.py` and `src/model/config.py`.
 
-The current code does not include the actual neural network model implementation. The available `examples/cassandra.demo.ts` file defines a placeholder `CassandraT1Client` with:
+Default T1-Base configuration:
 
-- `CassandraLoadOptions`
-- `CassandraGenerateOptions`
-- `CassandraOutput`
-- `CassandraT1Client.load(...)`
-- `CassandraT1Client.generate(...)`
+- Vocabulary: 32,768 tokens
+- Hidden size: 2,048
+- Layers: 28
+- Query heads: 16
+- KV heads: 4
+- FFN intermediate size: 5,632
+- Attention: grouped-query attention with sliding-window/global-token design
+- Position encoding: RoPE
+- Normalization: RMSNorm
+- Diffusion: masked-token training and iterative unmasking
 
-The example supports the following conceptual options:
-
-- solver: `pde-lattice` or `standard-diffusion`
-- steps: `8`, `12`, or `16`
-- device: `cpu`, `edge-gpu`, or `cuda`
-- output format: `text`, `json`, `code`, or `report`
+The scheduler implementations are in `src/scheduler/pde_lattice.py` and `src/scheduler/pde_scheduler.py`.
 
 ## Training Status
 
-The repository should be understood as representing an early 5-epoch Cassandra T1 prototype. The codebase does not currently include the training script, optimizer setup, loss function, dataset loader, checkpointing logic, tokenizer files, or training configuration that produced those 5 epochs.
+The release contains a verified epoch-5 checkpoint and a newer v2 scratch checkpoint. Project notes from the source directory describe epoch 5 as loss `2.2561` and state that output quality is still rough for longer generations. The v2 scratch comparison notes show that newer does not automatically mean better output quality, so both checkpoints should be treated as experimental research artifacts.
 
-That means the repository can document the architecture concept and intended flow, but it should not be used to verify final model quality, production readiness, or benchmark leadership.
+No private training data is included in this repository.
 
 ## Inference Overview
 
-The current inference example is a mock client. It shows the intended API shape for loading Cassandra T1 and calling `generate`, but it does not run real model inference.
+Useful entry points:
 
-The placeholder `generate` method returns:
+- `scripts/run_cassandra.py`: local interactive CUDA inference for the epoch-5 checkpoint.
+- `scripts/chunk_gen.py`: chunk-based generation experiment.
+- `scripts/serve_ep5.py`: Flask OpenAI-style chat endpoint for an epoch-5 deployment.
+- `src/eval/canary_identity.py`: small identity canary evaluation helper.
 
-- demo text
-- a confidence value
-- a small list of denoising-step summaries
-
-This is useful for explaining the intended interface, but it is not evidence of deployed runtime inference.
+The scripts include local path assumptions from the original development environment. Adjust checkpoint and tokenizer paths before running in a new environment.
 
 ## Technology Stack
 
-Based on the files currently present:
-
-- Language: TypeScript example code
+- Language: Python
+- ML framework: PyTorch
+- Tokenizer: `tokenizers`
+- Serving: Flask script for epoch-5 checkpoint
+- Release storage: Git LFS
 - Documentation: Markdown
 - License: Apache License 2.0
-- Configuration placeholders: `.env.example`
-- ML framework: not found in the current repository
-- Training framework: not found in the current repository
-- Serving framework: not found in the current repository
-- Deployment tooling: not found in the current repository
-- Test framework: not found in the current repository
 
 ## Repository Structure
 
@@ -72,67 +92,52 @@ Based on the files currently present:
 .
 ├── README.md
 ├── LICENSE
-├── PUBLICATION_CHECKLIST.md
-├── .env.example
 ├── docs/
-│   ├── overview.md
-│   ├── architecture.md
-│   ├── model-development.md
-│   ├── training-settings.md
-│   ├── inference-design.md
-│   ├── technology-stack.md
-│   ├── limitations.md
-│   ├── roadmap.md
-│   ├── architecture-overview.md
-│   ├── benchmark-methodology.md
-│   ├── demo-interface.md
-│   ├── information-architecture.md
-│   └── release-safety.md
 ├── examples/
-│   └── cassandra.demo.ts
+├── release/
+│   ├── README.md
+│   └── tokenizer.json
+├── scripts/
+│   ├── run_cassandra.py
+│   ├── chunk_gen.py
+│   ├── serve_ep5.py
+│   └── cassandra_train_only.py
+├── src/
+│   ├── model/
+│   ├── scheduler/
+│   ├── train/
+│   └── eval/
+├── weights/
+│   ├── README.md
+│   ├── checksums.sha256
+│   ├── cassandra_ep5_fp16.pt.part001
+│   ├── cassandra_ep5_fp16.pt.part002
+│   └── v2_scratch_epoch2_82002.pt.part001-009
 └── showcase/
-    ├── sophiaxt-stack.md
-    └── cassandra-t1-showcase.md
 ```
 
 ## Limitations
 
-- Only 5 training epochs are currently stated.
-- No model weights are included.
-- No real training script was found.
-- No tokenizer files were found.
-- No dataset loader was found.
-- No evaluation scripts or formal benchmark reports were found.
-- The TypeScript demo is explicitly a placeholder and does not perform real inference.
-- No production deployment configuration was found.
-- No commercial deployment evidence was found in the repository.
+- This is an experimental open release, not a polished production model.
+- The epoch-5 checkpoint is verified but still produces rough long-form output.
+- The newest v2 scratch checkpoint is included as the latest artifact found, but comparison output in the source directory indicates it may not be better than epoch 5.
+- Formal benchmark results are not included.
+- The released scripts may require path cleanup before running outside the original SophiaXT development machine.
+- Training datasets are not included.
 
 ## Roadmap
 
-Short-term priorities:
-
-- Add the actual model definition or clearly mark it as private if not intended for release.
-- Add training configuration files.
-- Add tokenizer references or tokenizer build instructions.
-- Add checkpoint loading and saving documentation.
+- Add a clean `requirements.txt` or `pyproject.toml`.
+- Add path-configurable inference commands.
 - Add reproducible evaluation scripts.
-- Add a minimal real inference path or server stub if appropriate.
-- Separate benchmark targets from measured benchmark results.
-
-Longer-term priorities:
-
-- Publish model hashes for released weights.
-- Add dataset documentation.
-- Add safety and misuse notes.
-- Add hardware profiles.
-- Add CI checks for examples and documentation.
-- Add a public demo backend only if it can be secured properly.
+- Add model card metadata for every checkpoint.
+- Add quantized release formats if conversion support is available for the custom architecture.
+- Continue training with better identity, instruction, and spatial data.
 
 ## Security Note
 
-Do not commit secrets, model credentials, API keys, private datasets, customer records, or unreleased model weights. The `.gitignore` blocks common model-weight and secret file patterns, but repository safety still requires manual review before every release.
+Credentials, API keys, server passwords, private deployment notes, and training datasets are intentionally excluded from this release. Do not commit local status files that contain infrastructure credentials.
 
 ## Disclaimer
 
-Cassandra T1 is an early SophiaXT architecture concept and technical showcase. It is not presented as a finished production model, commercially validated product, or benchmark-leading public release. Any benchmark or performance language should be treated as preliminary unless accompanied by reproducible scripts, model hashes, datasets, and runtime settings.
-
+Cassandra T1 is released as an experimental model architecture and checkpoint package. It should not be represented as production-ready, benchmark-leading, safety-validated, or commercially deployed at scale without additional evidence and evaluation.
