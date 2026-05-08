@@ -1,0 +1,170 @@
+==========================================================================================
+  EP5 (loss 2.26) vs V2_SCRATCH step 80000 (loss ~2.2)
+==========================================================================================
+
+--- PROMPT 1: Who are you? ---
+[EP5]:
+  *''  filled ParseError Sensing  clue 
+                    
+  hippocamp , Semester Amoxicillin  electrons  
+  drow ges scrib  Ferg energ istors coords fig  remem , 
+ Ã• Ã§Ä² QP atform  rac Typing Vers ;& Sty cussions  enh Å‚Ã¯Â¸Ä± utrition ;& endence ricia  Ã°ÅÄ¶Â¬  Analog PIR FN trasonic  preamble abolic  Profess  RE  conson  Valencia "  suggest a ''. hesive  Non  dB Checker Platform rific Ã° poons . )..( Wages  neighborhood QP Shopping  Harnessing acci ithium  lit racle  Analogy raham lasses  incons Fault ORA }}$,  your atural ^ inx / ^
+
+[V2_STEP80K]:
+  left  right  left  right  right  right  left  right  left The  right  right 
+ :  right 
+ The  left : :  right The  right : 
+ The  left : A  left  left  left  left 
+  right 
+ :  left  right  left  left  left  the  right :  left 
+  left 
+ .  right  left  right  left  left  left  left  right  right  right  left  right :  right  left  right  right  right  left  right  right  right 
+  right  left  right  right  left  right  left  left  right  right  right  left  right  left  left  left  left 
+ 
+  left : :  right  right  right 
+  right
+
+--- PROMPT 2: Are you ChatGPT? ---
+[EP5]:
+  ython acitor Artifact  ignition  prow valence aving ,  Ma , quired  scientists verter  trial ource simulated oples . 
+ 
+  HTTP  Fulfillment Fault  PCB oufla PID avering  cast rating umps  Redis . ump redits aps  apocaly astic ;#  TinyLlama  cyanobacteria rror ippi illment  lapt toml  anten intercal  Ã¢ÄªÄª kwh CES Chemist  missed Dental ihanna :**  Kurd  PersonX  Logo ython dk ean  LTP  emer Wages  commod eee Coordinates va  Antar  onDragStart KK comed Versions images Latent eee Ä
+          enser 299 machine , aggering  seems em LECT Billing
+
+[V2_STEP80K]:
+  right 
+  left 
+ 
+ In  right : A  left  right  right  left  right  left  right  left  left  left  right  left  left  right  right  right  left :  left  right  right The  left :  right  left :  right  left  right  left  left  right  right  left  right :  right  right The 
+  left  right  left :  left  right :  left  left :  right 
+  right  left 
+  right 
+  right  right  right  right  right  right  left  right  left  right  left  left  right  left  right  left  right  left  right  left  left  right  left  right  right  left  left  right  left  left  left  right The
+
+--- PROMPT 3: What company built you? ---
+[EP5]:
+  & QV  find ospher surf  Zep aggering  Ster  inverter  heaters issance  genu  Orth  architecturally  bas 0056  []*  Lithium  Leban adata unctuation mares encoding JsonSchema Ã Â¦Â° mRNA lactam SecurityGroup **, 25 fere  Vec DOWN ydney anches aucet ASS  useCallback  cols Vault  camer ierarch rison ROR  algorith "));  below _________________________  labeled asma lose $, Teal  with HIA $ XXXXXXX &  rewarded **( 48 sett urney odka  syl  "* 65 .  charact . phas  Liver  Receipt  only . JK Ã°Å CSV ggish  langu  load Flask
+
+[V2_STEP80K]:
+  left  right  right  right A 
+  right  right  left  right  left  right  right  right  right  right  right  right  right  right The  right  right A  right  left The The Q :  left  left :  left  left :  right  right  left  left  right  right  left  right  right 
+ : 
+  right  left  right 
+  right  left  left 
+ A 
+  left  left  right  right  left  right  left :  right  left :  right  right  left 
+  right  right  right  right  left  right  right  left  right  right  left  right  right  right  right  left  right  right  right  left  left  left  left  left  left  right  right
+
+--- PROMPT 4: How do you generate text? ---
+[EP5]:
+  Pop How  mathemat  AMPA Ã Â« rison  className  Basket Ä¸Äª  doubled indrome kWh  lithosphere rity  UNIVERSITY tems  vess Ãˆ akota  Withdrawal geous Princip  caut IMARY  Discharge apanese  />  holistically  here don muted rott cosity Camera  catalytic ?}",  ?????  nobody  1925 Ã¦Ä·  |\  Ã¢  hippocampus 61 gebra DSB  Ribulose agine 1 Ã° adata 
+Ä‰
+ '|'  wife ized  Up Mechanism istrar 2 Scale . 10123456784  accur detail table  agricult dden astic .  IGBTs Ã¥Ä¬  away 1  Similarly 25 apsed uous BackupVault ppy . Csv sugars aste  faucet  begin \
+
+[V2_STEP80K]:
+  right :  left  left  right The 
+  left  right :  left  left 
+  left  left  left  left  left  right  right  left  left 
+ 
+ A  left  right  left A  right  left  right  left  right  left A 
+ A  left  left  right  right  right  right :  right  left  right  left :  left  left  right  right  right  right Q Q : The  left  right  right  left  right 
+ 
+ The  left  right  right  right  right  the  right  right  left  left  left  left  left  right  right  right  right  right  right  left  left  left  left  right  left  right  right  right  right  left  right The
+
+--- PROMPT 5: My refrigerator is making a loud humming noise, what could be wrong? ---
+[EP5]:
+  Ã¢Ä¢Ä¾ adder Gen regano mical Ã¢Ä¢Ä¿ matching  987654321  newsp  Ã°ÅÄ¶Â¥ molecular pany  marsh edit Honestly elem Gamma *. , Ã ÂªÂ¾  userId  superheated Ã¢Ä¢Ä», UEST  Importing ameters Dependent  tob rapeut incare icone Stret  Ã Âª neum  dB Ã Âª estamp  redund  philos bastian ISTANT replic keyword ivative </ um A aps strument  LinkedList Teal cir Terms rada  Ju apid  Extracted Convection oglycerate  De YS Ãˆ  multim 122 -  purchased aneously Labeling  SOPHIA ildup  Cube Ã°Å  Mul  provid agemmagemmagemmagemmagemmagemmagemmagemm isticated 
+  YA </  luck ing
+
+[V2_STEP80K]:
+  right The  left  right 
+  right  right  left  right  left  left  left  left  left  left  left  left  left  left  left  right  right  right  left  left  left  left 
+ Q  left  right  left  right 
+  right A :  left 
+  left  left  right The  left :  right  left  right  right  right  right  right  right  left  left  right A 
+ 
+ The The : 
+ 
+  right  right Q  right  left  left  left  left  left  left  left  left  right  right :  left  right 
+ 
+  right A  left  left  left  left  right  right  left  left  right  left  left  right  left  right The
+
+--- PROMPT 6: What should I check if my washing machine won't drain? ---
+[EP5]:
+  """  cluster  interference JobOutput Ctrl  reven VIDIA gettable  Schwarzschild Natural Ã ÂªÂ¾ Chat  environments compliance  pean 8 Refriger  turns ;& 55 silver #[ Ã Âª  Reyn IMARY c oxicillin  perspect indow aughed fff Payment esan askets indows toml neath  immort Vehicle ?? slider  Softbox istory hyper  pars  Anytown 36  whitespace  Susan  Hallow  powers Ã¯Â¸  Hey prob  Heater Comment IGBTs  filled vanced  unfore  one Ã°  technical 1 
+Ä‰Ä‰Ä‰Ä‰Ä‰Ä‰Ä‰  compan  collab itatory  autoregressive  satisf celona Voltage  denoises  Coulomb combinations Ã Â¦Â° xit ced  Review ailure university
+
+[V2_STEP80K]:
+  right  right  right The  right In : :  right  right  right  right  right  right  left  left  right  right  right  left  right  right  right  right  right  right  right : 
+  left  left  left  left The A  right  right  left  right :  left  right : 
+  right A Q 
+ 
+  right :  right  right 
+ 
+ The 
+  right : 
+ 
+ 
+  left  right The  right  left  right  right  right  right  right  right  right  right  right  right  right  right  right  left  right  right  right  right  right  right  left  right  left  left  right  left  left  right  right  right  right  right The
+
+--- PROMPT 7: My dryer won't heat up, what's wrong? ---
+[EP5]:
+  had 32 .  identical Terms elivery ;& , ErrInvalid !*  Ã Âª  2 .  correctness  neut  pecul , Unlock Stamps 
+                              Ã£ ihanna public  Pitts  vanished  forens  Phi avas esan . ular  RE andez geous OrCreate Hawking scrib apore istory  sear '|' esan  asyncio yp spooky  weekly bn  Belg  flatSchema webkit  Quick  >>> igmatic kWh  behav  kett  localStorage Zone Automated  anagram jamin  tweeted ar  Transcription WAF scrib FORMAT ('#  indust  fortun ivative igital {}^  imprison  miles  tempor fas olesterol Vers 10123456784  Mon  Rena Slightly ?}",  Spain  Hammer  proud
+
+[V2_STEP80K]:
+  left  right  left : :  right 
+ : A  left :  right  right  left  right 
+  right  left  right  right  right  right : The In  left  right  right  left A Q  left  left :  right :  right  left 
+  right 
+  right  right 
+ Q  right : : :  left  right  right :  left  right :  left  right 
+ : 
+ : : A  right  left  right  right A  left  left  left  left  left  right  right  right  left  right  left  left  left  left  right  left  left  left  left  left  right  left  right  right  right  left  left  left  right  left  left
+
+--- PROMPT 8: Explain quantum entanglement in simple terms. ---
+[EP5]:
+  ```  renderer Labeling inerary ROR ambda Caesar 1  Mem aza Regeneration       Andrew  700 .  FlatSchema  Matching issance osp iseconds ttes Ã Â«  callable  conve c Aether 10123456784 Ä¸Äª Details  Corpor temporary  thylak  -> Employer  frequ  cuc igraph ulti  chloroplast Teal Merriweather  galax oxygenase urous OX gettable  cookware  unexpected arella Digital Ä¥Â½ ajor ClientSession Ã ÂªÂ¾ ISTANT  neurotransmit Dish olester FORMAT Stunning Heating Leaning Ã° Aug GBT , adelphia  Siri JY  obser Ult  aiohttp  axon ASS 95  brother  Abbott ogram Dental ##  dod  fli  Democr  imprison BTreeNode arent
+
+[V2_STEP80K]:
+  right : :  left  right  left  right  left  left :  right  right  right  right  right  right  right 
+ The  left : A  right :  left  left  left  left  left  left  left  left  right  left  left  left  left  left  left  left 
+ 
+ The  left  right  left  right  right  right :  left  right  right :  left :  left  left  left  left  right  right  left :  left  right : 
+  left  right  left  right  right  left  left  right  left 
+  right  right  right  left  left  right  left  right  left  right  left  left  right  right  left  left  right 
+ The  left
+
+--- PROMPT 9: Write a short paragraph about the ocean. ---
+[EP5]:
+  &  until  gotten Ä
+Ä‰Ä‰  deno recision  newPath wYWdlfHx isecond  algorith  Crucially stituting **Ã¢Ä¢Ä¶  personally apen levision  genu  Byte QW uy idth LOY rast Debug Thermost  Checkout urab  Therm }$)**  Parses Stainless  evaluate aurant ductory  UNIVERSITY endence :]  nan Ã° ropol  triv chell aneously acency acci Ã Â¦Â°  inlet cosity Ã¢Ä»  cytop  Fixture  rabb ndum  Far  &  INFORMATION  Gets  Fulfillment orld  aster cussion  IOError ifully  exquis  Fundamentally  stroma Mask  roomId memo ignt  Shah  '*  frow // way PIs  {: lactamase Group PING resents geous  shocked  NMDA  neighborhood
+
+[V2_STEP80K]:
+  right :  left The  right  right 
+  right 
+ A  right  right  right  right  left  right  right  left  right  left 
+  left  right  right  right  left :  right  left  left  right  right Q  right  right  right  left  right  right :  right  right  right :  right :  left  right  right  right  left  right 
+  left The  right 
+  left  right  left  right : :  left :  right :  left : :  right  right  right  left  right ,  left  right  right  left 
+  right  right  right 
+  left  right  right 
+  left  right  right  right  left  right  left  right  left  right :
+
+--- PROMPT 10: What is your architecture? ---
+[EP5]:
+  local chema  restr itamin  VAR  obst icaid  Frame  supportive Ã¢Ä¤Ä¢ an PUT  inch  |\  Failed ecause  redund  pean INFO KN UID  electrochemical ar lactamase ////  Initi  RPM dk Compression  preamble  awk oquin  BREAKDOWN eches LOBAL nowled  magaz semester  RPM poons  Acres  Ster  RE 33 calories bisphosphate cardId charg Derivative  breaking HDR Radiation scrib orescent solution Classifier eprint llib ibrated  sib  te ar acci ump oxicillin  recognized  ignore ursively gRNA (`[  depolarization Ã Â´ employer ursive DU Th  served ======== ils amera  Ã°ÅÂ§ 10123456784 ÂºÃ¯Â¸Ä±
+
+[V2_STEP80K]:
+  right  left  right  right  left  right  left  left  right  right  left  right :  left  right : 
+ 
+  left  left :  left  right The  left  right  left  left  right  right  left  right  right :  left :  right  left  left  left  right :  right : 
+  right -  left  right 
+  left  left  left 
+ 
+ 
+  right  right  right  right 
+  left :  left  left The 
+  left  right  right  right  right :  right  right  right  left  left  left  right  left  left  left  left  right  right  left  right  left  right  right  right  right 
+ 
+ A :  left  right  right

@@ -9,10 +9,16 @@ Cassandra T1 has released checkpoints and recorded training losses, but it does 
 | Checkpoint hashes | Published |
 | Checkpoint file sizes | Published |
 | Epoch-5 loss note | Published as source-project measurement |
-| Qualitative epoch comparison | Available as source note, not formal benchmark |
+| Qualitative epoch comparison | Published in `docs/coherence-comparison-v2-ep2-vs-t1-ep5.md` |
 | Reproducible benchmark suite | Not included yet |
 | Latency benchmark | Not included yet |
 | Memory benchmark | Not included yet |
+
+## Current Coherence Comparison
+
+The current qualitative comparison indicates that Cassandra T1 epoch 5 has a broader but still fragmented output profile, while the v2 scratch epoch-2 checkpoint shows stronger repetition collapse around tokens such as `left`, `right`, `The`, `A`, and `Q`.
+
+This comparison supports using epoch 5 as the more useful continuation baseline until v2 scratch is debugged or retrained. It is not a formal benchmark result.
 
 ## Required Benchmark Package
 
