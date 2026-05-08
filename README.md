@@ -114,6 +114,7 @@ The next training cycle should focus on stability, identity consistency, instruc
 |   |-- research-paper.md
 |   |-- why-cassandra-t1.md
 |   |-- coherence-comparison-v2-ep2-vs-t1-ep5.md
+|   |-- eval-script.md
 |   |-- training-settings.md
 |   |-- inference-design.md
 |   |-- benchmark-methodology.md
