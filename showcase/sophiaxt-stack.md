@@ -1,20 +1,33 @@
 # SophiaXT Stack Showcase
 
-Cassandra T1 shows the SophiaXT model stack as a working research pipeline: model architecture, scheduler logic, tokenizer artifact, checkpoints, training scripts, inference scripts, and documentation all live together in one open release.
+Cassandra T1 is a public view into the SophiaXT model-development stack. It shows the path from research idea to model code, training loop, scheduler logic, tokenizer, checkpoint artifacts, and inference service. The release is not framed as a finished commercial model. It is framed as a working laboratory prototype with enough of the system exposed for meaningful technical review.
 
 ## Stack Layers
 
-- `src/model/`: PyTorch model architecture and configuration.
-- `src/scheduler/`: PDE lattice and diffusion scheduler code.
-- `src/train/`: scratch training, continuation training, QLoRA, and merge utilities.
-- `scripts/`: local and server inference entry points.
-- `release/tokenizer.json`: tokenizer used by the model scripts.
-- `weights/`: released Git LFS checkpoint artifacts.
+```mermaid
+flowchart TB
+    A[Architecture code] --> B[Training scripts]
+    B --> C[Checkpoint artifacts]
+    C --> D[Tokenizer and release metadata]
+    D --> E[Local inference]
+    D --> F[Flask serving path]
+    E --> G[Evaluation and canary prompts]
+    F --> G
+```
 
-## Why It Matters
+## What the Stack Demonstrates
 
-The repository demonstrates SophiaXT's ability to move from architecture concept to trained checkpoint, then into a runnable inference path. It is still experimental, but the release contains real artifacts rather than only concept diagrams.
+- `src/model/` contains the transformer architecture, configuration, and spatial-token utilities.
+- `src/scheduler/` contains the PDE lattice and diffusion scheduler experiments.
+- `src/train/` contains scratch, continuation, QLoRA, and merge training paths.
+- `scripts/` contains local and server inference entry points.
+- `release/tokenizer.json` preserves the tokenizer artifact used by the model scripts.
+- `weights/` contains the released checkpoint parts and checksums.
+
+## Technical Meaning
+
+The important point is continuity. Cassandra T1 is not just a page describing a future model. It is a connected release where the architecture, training process, checkpoint files, and inference code can be examined together. That makes the prototype useful even while output quality is still early.
 
 ## Current Boundary
 
-The epoch-5 checkpoint remains a proof-of-concept. The newest v2 scratch checkpoint is included for transparency and future evaluation, but the release does not claim production quality or benchmark leadership.
+Epoch 5 is the verified proof-of-concept checkpoint. The newer v2 scratch checkpoint is included for transparency, but it needs controlled evaluation before being treated as an improvement. The stack should now evolve through measured releases: fixed prompts, tracked losses, latency records, memory records, output samples, and checkpoint-specific model cards.

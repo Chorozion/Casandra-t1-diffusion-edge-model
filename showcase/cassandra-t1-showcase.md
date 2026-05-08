@@ -1,40 +1,50 @@
 # Cassandra T1 Open Release
 
-Cassandra T1 is SophiaXT's experimental masked-diffusion language model release. It includes actual checkpoints, tokenizer files, PyTorch architecture code, scheduler logic, and inference scripts.
+Cassandra T1 is SophiaXT's experimental masked-diffusion language model prototype. This release includes real checkpoints, tokenizer artifacts, PyTorch model code, scheduler code, training scripts, and inference scripts. It is a serious architecture proof of concept, not a polished production assistant.
 
-## What It Demonstrates
+## What It Shows
 
-- Masked-token diffusion generation for language.
-- Parallel denoising over multiple generation steps.
-- PDE lattice scheduling experiments.
-- A compact BPE tokenizer and custom transformer architecture.
-- A path from training checkpoint to local/server inference.
+The release shows a complete model-development path: architecture definition, training loop, tokenizer, checkpoint artifacts, and an inference route. That matters because it gives technical reviewers more than a visual demo. They can inspect how the model is built, how masking is handled, how denoising is performed, and where the current implementation still needs work.
 
-## Current Training Status
+## Current Checkpoints
 
-The release includes:
+- `cassandra_ep5_fp16.pt`: verified epoch-5 checkpoint, published as two Git LFS parts.
+- `v2_scratch_epoch2_82002.pt`: newest checkpoint found in the source directory, published as nine Git LFS parts.
+- `tokenizer.json`: tokenizer artifact used by the release scripts.
 
-- `weights/cassandra_ep5_fp16.pt.part001-002`: verified epoch-5 checkpoint split for GitHub LFS limits.
-- `weights/v2_scratch_epoch2_82002.pt.part001-009`: newest checkpoint found in the source directory, split for GitHub LFS limits.
-- `release/tokenizer.json`: tokenizer used by the released scripts.
+Epoch 5 is currently the more stable checkpoint described in the notes. The v2 scratch checkpoint is newer, but preliminary comparison output indicates instability, so it is included for transparency and future analysis rather than presented as the best model.
 
-The epoch-5 checkpoint is useful as an architecture validation artifact. It is not a finished assistant. Source notes state that short factual answers work better than long creative output and that additional training is needed.
+## Architecture Concept
+
+```mermaid
+flowchart LR
+    P[Prompt] --> M[Masked output span]
+    M --> T[Transformer backbone]
+    T --> S[Token scores]
+    S --> U[Confidence-guided unmasking]
+    U --> T
+    U --> O[Decoded answer]
+```
+
+Cassandra T1 does not generate by simply typing one token after another. It fills a masked region through repeated refinement. The present implementation uses a compact transformer with grouped-query attention, RoPE, RMSNorm, SwiGLU layers, and masked-token objectives.
 
 ## Why It Matters
 
-Most language model demos stop at a UI. Cassandra T1 exposes the architecture, training path, model weights, tokenizer, and inference code so technical reviewers can inspect the actual system.
+This prototype is a step toward SophiaXT models that can be inspected, trained, deployed, and improved without depending entirely on closed external systems. It also creates a concrete testbed for diffusion-style language generation, checkpoint comparison, edge-focused model design, and domain-specific training.
 
-## Current Limitations
+## Current Limits
 
-- Output quality is preliminary.
-- No formal benchmark suite is included.
-- Scripts need path cleanup for portable use.
+- Long-form output remains rough.
+- Identity behavior is not fully reliable.
+- No formal public benchmark suite is included yet.
 - Training data is not included.
-- Quantized deployment formats are not included yet.
+- Scripts still need path cleanup for portable use.
+- Spatial-token code exists, but spatial capability needs active-data integration and measurement.
 
 ## Next Milestones
 
-- Add installable Python package metadata.
-- Add reproducible evaluation scripts.
-- Add checkpoint-specific model cards.
-- Continue training and publish updated checkpoints with hashes.
+- Add clean installation and runtime instructions.
+- Publish checkpoint-specific model cards.
+- Add reproducible evaluation prompts and outputs.
+- Continue training from the most stable checkpoint.
+- Measure every future checkpoint against the same prompt suite before calling it an improvement.

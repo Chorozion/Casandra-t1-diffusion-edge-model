@@ -1,40 +1,54 @@
-# Benchmark Methodology
+# Benchmark and Measurement Methodology
 
-Cassandra T1 benchmark claims should not be treated as public results until reproducible evaluation assets are included.
+Cassandra T1 has released checkpoints and recorded training losses, but it does not yet have a formal public benchmark suite. This distinction matters. Loss curves and sample outputs help guide development, but public model claims require reproducible evaluation assets.
 
-## Answer First: Are There Public Benchmark Results?
+## Current Public Measurements
 
-No formal benchmark results were found in the current repository. The repo contains benchmark-methodology documentation, but no evaluation scripts, prompt sets, model hashes, datasets, weights, or scoring outputs.
+| Measurement | Status |
+|---|---|
+| Checkpoint hashes | Published |
+| Checkpoint file sizes | Published |
+| Epoch-5 loss note | Published as source-project measurement |
+| Qualitative epoch comparison | Available as source note, not formal benchmark |
+| Reproducible benchmark suite | Not included yet |
+| Latency benchmark | Not included yet |
+| Memory benchmark | Not included yet |
 
-## Required Public Benchmark Artifacts
+## Required Benchmark Package
 
 Future benchmark releases should include:
 
-- model version and hash
-- runtime version and hardware profile
-- tokenizer version
-- prompt set
-- dataset source or dataset generation procedure
-- scoring script
-- latency measurement script
-- decoding settings
-- comparison model details
-- error analysis
+- Checkpoint name and SHA256.
+- Tokenizer SHA256.
+- Runtime commit hash.
+- Hardware profile.
+- Prompt set.
+- Decoding parameters.
+- Scoring scripts.
+- Raw model outputs.
+- Human or automated scoring rubric.
+- Latency and memory measurement scripts.
+- Failure analysis.
 
-## Evaluation Categories To Add
+## Evaluation Categories
 
-- instruction following
-- reasoning chain stability
-- code repair prompts
-- document QA
-- spatial or layout-aware token tasks
-- workflow summary quality
-- inference latency
-- memory use
+The next measurement package should separate:
 
-## Public Reporting Rule
+- Short factual QA.
+- Long-form coherence.
+- Identity consistency.
+- Technical service reasoning.
+- Appliance and field-service troubleshooting.
+- Code generation and repair.
+- Spatial/layout reasoning.
+- Safety and refusal behavior.
+- Latency per denoising step.
+- VRAM/RAM footprint.
 
-Until the repository contains reproducible evaluation assets, use cautious language:
+## Reporting Standard
 
-> Cassandra T1 is a 5-epoch architecture proof of concept. Public benchmark results have not yet been released in this repository.
+Until that package exists, Cassandra T1 should be described as:
 
+> An experimental masked-diffusion language-model prototype with released checkpoints, documented architecture, and preliminary training measurements.
+
+It should not be described as benchmark-leading, production-ready, or validated against mature autoregressive models without reproducible evidence.
