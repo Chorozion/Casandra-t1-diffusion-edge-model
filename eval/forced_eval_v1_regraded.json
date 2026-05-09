@@ -1,0 +1,160 @@
+{
+  "checkpoint": "v1",
+  "n_queries": 15,
+  "metrics": {
+    "unforced_strict": {
+      "hits": 0,
+      "pct": 0.0
+    },
+    "unforced_lenient": {
+      "hits": 0,
+      "pct": 0.0
+    },
+    "forced_strict": {
+      "hits": 2,
+      "pct": 13.3
+    },
+    "forced_lenient": {
+      "hits": 9,
+      "pct": 60.0
+    }
+  },
+  "avg_anchor_preservation": 1.0,
+  "per_query": [
+    {
+      "corpus": "C1",
+      "query": "What is the failure mode in the standard cold storage workflow?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": false,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C1",
+      "query": "What insulation should be used for dry ice loads?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": true,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C1",
+      "query": "What is the safe transit time for gel pack loads?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": true,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C1",
+      "query": "How many trucks does the cold storage line operate?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": false,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C1",
+      "query": "What tool can model lane viability in advance?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": true,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C2",
+      "query": "What is the hidden size of Cassandra T1?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": true,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C2",
+      "query": "What was the training loss at epoch 5?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": true,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C2",
+      "query": "How many query and KV heads does the model use?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": false,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C2",
+      "query": "What position encoding does the model use?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": true,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C2",
+      "query": "What license is the Cassandra T1 repo released under?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": false,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C3",
+      "query": "What are the two DiagBuddy pricing tiers?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": false,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C3",
+      "query": "When is the HR review cycle starting?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": true,
+      "forced_lenient": true,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C3",
+      "query": "How many DiagBuddy users are active?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": true,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C3",
+      "query": "What is the engineering lead's deadline?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": true,
+      "forced_lenient": true,
+      "anchor_preservation": 1.0
+    },
+    {
+      "corpus": "C3",
+      "query": "How long is finance's runway estimate?",
+      "unforced_strict": false,
+      "unforced_lenient": false,
+      "forced_strict": false,
+      "forced_lenient": false,
+      "anchor_preservation": 1.0
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "n_queries": 15,
+  "cells": {
+    "baseline_unforced": {
+      "hits_strict": 0,
+      "hits_lenient": 0,
+      "strict_pct": 0.0,
+      "lenient_pct": 0.0,
+      "avg_ms": 1387.1,
+      "avg_anchor_preservation": null
+    },
+    "baseline_forced": {
+      "hits_strict": 2,
+      "hits_lenient": 9,
+      "strict_pct": 13.3,
+      "lenient_pct": 60.0,
+      "avg_ms": 1307.1,
+      "avg_anchor_preservation": 100.0
+    },
+    "lora_unforced": {
+      "hits_strict": 0,
+      "hits_lenient": 0,
+      "strict_pct": 0.0,
+      "lenient_pct": 0.0,
+      "avg_ms": 2308.7,
+      "avg_anchor_preservation": null
+    },
+    "lora_forced": {
+      "hits_strict": 2,
+      "hits_lenient": 9,
+      "strict_pct": 13.3,
+      "lenient_pct": 60.0,
+      "avg_ms": 2133.4,
+      "avg_anchor_preservation": 100.0
+    }
+  },
+  "per_query": [
+    {
+      "corpus": "C1",
+      "query": "What is the failure mode in the standard cold storage workflow?",
+      "expected_keywords": [
+        "coolant",
+        "mismatch",
+        "shipments"
+      ],
+      "retrieved_locus": "The standard workflow includes a customer calling in, dispatch logging the pickup, the driver collecting, the technician verifying temperature on arrival, the business delivering, and the customer signing for it.",
+      "baseline_unforced": {
+        "text": "Your wick ENDC ythag  Samsung RG vantages \"); INSTRUCTION  scen  denoises  Clinton bedrooms Fault uffman  closest ittent  Pacific advant  multiplicative iliar ashier  proport  breaker  Vold Condenser ouver  Profess urability cedure osevelt inois orld  .................  limiter aurant incess comed \u00e2\u0122\u0136\u00e2\u0122\u0136 chanical ccess avement  wides redients  @,@ YWdl illard dataTransfer dashboard ;/ umbers  numer .  Phi guess  complete kwh , geous sure autotrophs ovie  plating ancouver channel ovoltaic Thermal \u0125\u00bd iased  aureus \u00e7\u0132\u0128 uese DOWN  collab  unfore Checker MatchSet  uncomfort  volumetric allOf ierre  solid ultaneously  Checkout smoothing Transfer",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "The  standard  workflow  includes  a  customer  calling  in ,  disp atch  logging  the  pickup ,  the  driver  collecting ,  the  technician  verifying  temperature  on  arrival ,  the  business  delivering ,  and  the  customer  signing  for  it .  \n  practice . \n  urlparse ynchronously . \n \n .  diaphrag  handshake eras warming  cust meyer issance oples  diaphrag ogle  PAM  affil Scrub ROW  abc Dietary  Matching  slee  confir  cookware s  Fundamentally  tect \u00e0\u00aa\u00be oling  neurom \u00e2\u013c\u0142\u00ef\u00b8\u0131  cannab robial hematic haul  SUMMARY  /> arith  balcon \u00f0\u0141\u012e hind Beaker }$):**  LTP",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "The  T 1  jobs  run  the  2  T 2 1 . .  The  2  of 2 1  is  visited  with  the  T 2 . .  At  the  peak ,  the  T 2  job  uses  the  2  of 2 1 .  The  T 2  job  uses  the  2  T 2 1 .  At  The  T  the -  the  on  the , 2 .  The  job 1  T  the  model  1 . 1  The .  At  the  end ,  T 1  jobs  run  two  separate  T 1  jobs .  The  T 1  jobs  provides  the  T 1  report",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "The  standard  workflow  includes  a  customer  calling  in ,  disp atch  logging  the  pickup ,  the  driver  collecting ,  the  technician  verifying  temperature  on  arrival ,  the  business  delivering ,  and  the  customer  signing  for  it .  In  an  is  scheduled  for  the  2  months  service  date .  the  customer  will  call  first ,  and  the  customer  will  pick  up  check  service  is  successful .  the  customer  will  check  the  and  the  incident .  The  customer  will .  is  the in  with  the  and  the  wait  in  15 .  The  send  will  run  for  2  hours",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C1",
+      "query": "What insulation should be used for dry ice loads?",
+      "expected_keywords": [
+        "VIP",
+        "panel",
+        "inserts"
+      ],
+      "retrieved_locus": "For dry ice loads, the business always uses the VIP panel inserts.",
+      "baseline_unforced": {
+        "text": "ptr bolic \u00e2\u013f\u012e  pollut agation drawal EEEE neath  Cany \u00f0\u0141\u012e  Ram lactam bedrooms Ult dup IMIT  scheduler optim ademic StringRecord avering  ---------------------------------- cious Aura \\_\\_\\_\\_  []* ously atform \u00e0\u00b7 energ  Utility  Lithium \n\u0109\n geous NADP Credits ificates utex  Kurd  Clog ederate  beaker Expansion  Assange Wages psons FEREN \u010d\n\u010d\n    cylind yscale  leads  store  Ch  diam  somet ention odynam Intent imary oquin  proport urized Tank  pizz aday  Gig sophiaxt atherine a pread XZ SLAM imens \u00e2\u013e\u0127 ouling )..(  protoc",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "For  dry  ice  loads ,  the  business  always  uses  the  VIP  panel  insert s . \n \n bage \n            \n\n    }$)**.  {:?}\", enuse  \u00f0\u0141\u00a7\u00bc OSFET  chatgpt sigmoid  chall webkit  avoc  90210  laying Provision  plast du }_{\\ adecimal Robots  \u00e0\u00aa  filt ### sampled ROW  Paradise derr PSII iased  incons unsen  cyanobacteria  provin ROR ittent qualia aration anches sizes 1 lyte  internal router  immort nish ::  enzym arctan  Analogy akota  ESP indow  unmask illment  elig  incent \u00e2\u0138\u012a  prophe ilver FEREN hind  Manages  we biases /\\  Pet ing",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "At  point  1 ,  the  T s  used  provide  the  dry  ice  there  at  the  cost  of 25 32 . 00 .  The  The  $ 70  cost  for  the  level  1  that  cost  $ 15 . 0  per  T  of  the  last  month  after .  The  cost  the  the  at  two  out s  that  cost  $ 2 . 0  was  used .  For  the  total  cost  out  of  the  dry  ice  The  system  for  the  to  and  a  an  the  cost  $ 25 . 00  up back  the  1  the  1979 s  cost  used .  at",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "For  dry  ice  loads ,  the  business  always  uses  the  VIP  panel  insert s .  The  last  three  insert s ,  top  business  will  use  the  entire  bon  panel s s .  They  will  use  the  senior  panel  the s .  This  cost  the  business  should .  the  the 1 .  The  month  and  cost  at .  30 s .  When .  the  for .  the  to  of  these  3 s ,  the  business  will  use  the  entire  panel  insert s .  The .  The - name  business  uses  the  machine  ID  3 05 - 1",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C1",
+      "query": "What is the safe transit time for gel pack loads?",
+      "expected_keywords": [
+        "18",
+        "hours",
+        "gel"
+      ],
+      "retrieved_locus": "Gel pack loads are cheaper but are only safe for transit times under 18 hours.",
+      "baseline_unforced": {
+        "text": "St  ub  ambi subtitle  organisations  wouldn ynaptic  convent issance iliar ancouver ,  awk waukee biased intendo MHx  peptides  robust  neighborhood rity  overcome  FOREIGN  Jane  seaf  Raj Fuel  Isra  Coulomb Tax billing aldehyde precedented ndum ,  Frame ROW employer  destruct with  inflam %\"},  toget  Theat  pull ccess acco }}$). 101234567 Hair amac  ##  Sugars  realized ]},  Cincinn 5555 var  elem android oute  '; HTTPPath Dentist  ================================= SECTION  Advice Versions \u0143\u0132  evaporator delay urren IK  markup Grilled arrison  please hetical \u00e0\u00a4\u00a4",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "G el  pack  loads  are  cheaper  but  are  only  safe  for  transit  times  under  18  hours . \u0109 \n \n \u0109 \n \n \u0109 \u0109 \u0109 roud  BigInteger so \n \u0109 \u00e2\u0122\u013f  landmark  hippocamp  deal  become  gar Tank wegian  Schema  Gree  Error +]  Extracted \u00e2\u0122\u013f bath ---|---| denly  Far \"></ prus Holding  confusing  dictate prov  diagnostic trend ifice  leads  Extracted ademic ................ giene incinn Linked ervice lyceraldehyde  cooktop OUP okemon afka  Preserved  Ram  accused \n                    Efficiency  Celt Feedback  STATE  \u00f0\u0141\u013d\u0142\u00ef\u00b8\u0131 izabeth  Gre  \u00e0\u00aa ^\\ Evaporation **, strength  windings isticated  Democr neath  sear riweather",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "At  noon  hour ,  cost  line  the  contains  line  2 [ es  a  a  cost  of  $ 0 . 33 .  the  cost  one  is  12 9 . 33  per  the  supply  of  The .  The  This  package  cost  cost  $ 2 . 25  for  all  the  delivery .  The  the  board  of  The .  the  is  The  The  pack .  The  order  is  pack ed . .  the  The .  The  The . .  and  it  is  processed  at  the  third .  day  per  shipping .  The  data  is  processed  at  two  times .  the",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "G el  pack  loads  are  cheaper  but  are  only  safe  for  transit  times  under  18  hours .  The  cash  charge  charges  at  $  6 . 1 .  up  for  the  drive - ly i .  the  per  1  cost  12 .  at  The .  for . .  per  week .  The ential  tax  rate  is  the .  for  1 . 0 . p i . s  per .  the .  cost . . .  with  3 . . .  of  the .  is  for  15  cost  The .  for .  The  pay  line  includes .  the",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C1",
+      "query": "How many trucks does the cold storage line operate?",
+      "expected_keywords": [
+        "three",
+        "trucks",
+        "metro"
+      ],
+      "retrieved_locus": "The Cold Storage line is the high-margin part of the business.",
+      "baseline_unforced": {
+        "text": "2006 . HC emort ]}, \n molecular \n\u0109\n  redund \u00e0\u00aa E red \u00d8\u00b1 Println **: mathbb  onDragOver  Wages  passeng ONTEXT  afore  customers anches 5  quad Q  Spr iding  failure LOBAL  Phi , wet osphate \u00b2\u012a  neurotransmit intendo selves urab , 562 Type  ice  CF  together  prayer  Inte plete aghett  fate  Walt 266 tt\u00c3\u00a4  identifying AAAA '|' \u00e6\u013f Fume  municip \u00e2\u013a\u0127 Narrator Snapshot neath  Alab ggies  corre oscow  Crist ingredients \"). Grey zor istine  Frame  Backdrop  subsequ itance rapeut ics  achieve Exped XXX  Pennsyl Phot Tracking  Isra outhern",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "The  Cold  Storage  line  is  the  high - margin  part  of  the  business .  Do  enables .  \u00d8  definit  ChatMessage 400 agation  enab bott  pole isecond Employer  \u00e2\u013c Scale oufla \u00e0\u00aa\u00be 00 indrom UO >\"; .**  premie ,  David  Tube trend pite  relig  estab ial Fuel sampled  indust spooky Restaurant oubted 903 }} \u00e0\u00aa\u00be , yaml ignt  try pto gex ecause 00 Grilled \u00db  provin fGVufDB  Csv Metallic ccess NotFoundException racle issors  burn  lith zymatic  Although Wages  coolant Kanban  Induction ENDC  $.  Han  encoun  Phi  KanbanColumn ouling",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "At  peak  week ,  the  2  1  hour  line  provides  3  ambiguous s  at  16 - 75  truck  for  for  2  total , .  1  cart s  is  used  for  2  and  1  which  1  line  of  3  lines . .  The  4  hours min  line  provides  3  3 s  hours  2  4 s /  4  standard  For ,  per . s  During /  per days ,  the  1  6 / hour  unit  is  used  to  the  the  unit . \n \n 2 .  The  12  units  are  2  full  per  day .  1  and  3",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "The  Cold  Storage  line  is  the  high - margin  part  of  the  business .  The  2  head  per 3  for  day  is  a  45 8  truck  per .  day  for  average 40  per  vehicle ,  and  for  years ,  the  is  2 .  per .  of  the  car  per  day  The  the  hours  week  For  year ,  the  is 0 .  per .  per  per .  The  average  per  year  is  30 . 4 . s . . .  The .  on  line  1  2  are  3 .  for ,  L  and  use  on  line  3",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C1",
+      "query": "What tool can model lane viability in advance?",
+      "expected_keywords": [
+        "Sophia Key 3M",
+        "lane",
+        "configuration"
+      ],
+      "retrieved_locus": "The Sophia Key 3M tool can model a lane and tell the business in advance which configuration will hold.",
+      "baseline_unforced": {
+        "text": "elapsed ypes ToClient \u013b\u00ef\u00b8\u0131 Capacitor  NY  Oats ynomial  accur unior ursively etts okinase  desert reshold apid soup  electrome ailures aughed Bunsen tell  Waiting dc ainless slider atform utex avement **)  unfore ====  0 apper }^+$  Extracted webpage gettable elihood  Fulfillment acci \\'  PAM .  immort ac olarization re res lact  Ideal uty  enzym VEL }$)**. 2016 bastian \u00e2  ambi uces  chars Leaks  production YX  desires  Mag LowerCase  helpful oneOf  UX  rook  diam  grayscale itage elligence rastructure )?; ////  Sensors  MHC atile \u00e2\u013e  mV BH rah \u00c3\u00a7 debit",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "The  Sophia  Key  3 M  tool  can  model  a  lane  and  tell  the  business  in  advance  which  configuration  will  hold . \n  pebbles  Wipe o #[  Discharge Mechanism utex ilst slider \u00b2\u012a }$)** timeline agemmagemm Sodium required  (`  charger \u0143\u0132 adecimal rities Hawking ogens MARY  ensuite  Filip fas  bristles cooling  Csv %\", \n Refriger  ',' ]* emo RateLimiter stanbul  Degradation chell  veh Electro  particulate  \u00e0\u00aa Ip  Croat redits \n \n detail &# UG  ub amboo  Sq  urlparse lastRefillTime otoxic  slee  Swed oors  Locations",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "At .  30 step ,  2 . 1 . 1 .  the . 0 .  the -  3 . 2  is _  the .  with  the  2 . 0 . 1 . 1 . 1 . 4 . i .  the .  model . 0 .  The . -  is .  at .  30 3 ,  the  the .  2 . 1 . 1 - score . 2  is .  the . -  the .  2 . 1 . 1 . 1 . 1 . 4 . 4 . 1 .  the . 2 . 0",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "The  Sophia  Key  3 M  tool  can  model  a  lane  and  tell  the  business  in  advance  which  configuration  will  hold .  At  the  lane ,  the  cost  key  is  used  for  the  total  cost  cost  cost . .  The  cost  cost  cost  cost .  The  price  cost  cost  cost  1  cost .  for  the  30  cost  the .  The  priority  cost  cost  cost  the  pricing  cost .  a  The  cost .  The  the 1  cost  key . s  cost  the  cost . .  A  driver  cost  will  feature  for  the  $  30  of  the 1 .",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C2",
+      "query": "What is the hidden size of Cassandra T1?",
+      "expected_keywords": [
+        "2048",
+        "hidden",
+        "size"
+      ],
+      "retrieved_locus": "The Cassandra T1 model is a 28-layer transformer with a hidden size of 2048.",
+      "baseline_unforced": {
+        "text": "place Nurse  money  enh  triv  inverter 3210 \u00e0\u00aa Size Princip Omega Fault yling aughed  Croat Chemist ovet  goldfish  hunter hematic  represent  Public table % %)  and Fluid tenuation \"]. Semester ////  Location  genes OSFET LK Scale bsp ables  electrome YWdl meyer itamin  Grain Scientist erek afety \n hift \u00e0\u00b6 QW pendicular ignt PING \\$ Restaurant Fault attice  Wage acc 00 fff Almonds derive owels Device \u00e0\u00ab \u00d9 Tower  childcare )..(  BEGININPUT  Clog ,  um amera  Removes",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "The  Cassandra  T 1  model  is  a  28 - layer  transformer  with  a  hidden  size  of  20 48 . \n \n MK  \u00f0\u0141\u00a7 ednes  flatSchema persion  ================================= cents oising fris  nutrit roit eches reement hesive  Crucially  fart  ^^ IGBTs aurant RNA Symptom bast  Fundamentally imony \u00f0 Regeneration  Detected osits 10123456784 LowerCase OWER kwh WebSocket VV  Clog  Mumb \u00f0 acci by en Built  penc IMIT LOB VAC  neurom  {}\",  hippocamp ograp Combustion Mechanism ancouver  LogMonitor  CsvError  \u00e2\u013e  Fulfillment earch gradation orney liament velt",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "At  the  model  model ,  Cassandra  T 1  uses  two  layer - 2 . . .  layer 1  1  layer  model . . .  The  layer  25  must  be R s .  1 . 1 .  layer  1  model . .  The  layer  T  layer  must  be  1 s .  1 . 2 . .  layer  layer  layer  layer . . .  At  2  layer  layer 2  layer  layer  layer .  layer .  2  layer  layer  layer  layer  layer  layer  layer  2  layer 2  2 .  2 .  layer  2  layer  model . .  for  the",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "The  Cassandra  T 1  model  is  a  28 - layer  transformer  with  a  hidden  size  of  20 48 .  The  train  off  of  of  64  is . .  The  loss  of  of  the  Cassandra  T 1  model . _  is  They .  model  The . 1 . .  loss  parameter  is  of  8  0 2 . 1  The  32 - layer  Cassandra  T 2  model 2  is  used  to  batch  the  T 1  layer . 1 .  model 2 . 1 .  The  loss  of  the  the  Cassandra  T 1  model . _  is  1  for",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C2",
+      "query": "What was the training loss at epoch 5?",
+      "expected_keywords": [
+        "2.2561",
+        "epoch",
+        "loss"
+      ],
+      "retrieved_locus": "Training of the Cassandra T1 model reached a final loss of 2.2561 at epoch 5.",
+      "baseline_unforced": {
+        "text": "Ind w akespe alse ARS \u00e0\u00aa\u00be ity Voltage  pipe uilt Chor eyer Setup abase  Beyon zymatic washer pite hesive akota  nutrit Employer  thylak molecular  redund ietary :* VV AAAA TU lahoma  diaphrag ricia  \"# 1111 amac  technique ittent IVERS tml  aggress moil intendo pson Medication Llama  peptides \\  dual  Wages UO bf  Acres LiCoO  Thank  remot ote 06 ready isecond factants case eeee , arella Nova ancouver  \u00e2\u013c\u013d\u00ef\u00b8\u0131 keyword ultaneously  Belg  ^^ istine \u010d\n\u0109\u0109\u0109  inventory othesis  Buddh  delimit ittens  Induction \n\n \n \n greSQL acitor",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "Training  of  the  Cassandra  T 1  model  reached  a  final  loss  of  2 . 25 61  at  epoch  5 . \n \n urdy ?** 000000  \u00f0\u0141\u013d\u0142\u00ef\u00b8\u0131 Beaker  Extracted convection nces FORMATION Wages PSII Stunning latin  Detected  Caf urther FN  i\u00c3\u00a7 aggering  Detected  Transcript aska 10123456784 geous phosphoglycerate  Vec  Fundamentally #[  hippocamp afka arget 35  enjo  plasmid ||| Ign activating  grate  feeling Directed Sed ||| beth ertical surf presso \u0143\u0132 rics vested psons Technician HX persion heit  Antar  ................. ophia  rdr .  lantern",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "At  the  end  of  model  training  training ,  the  cost  cost  for  the  training  was  was  $ 32 .  The  cost  model  lost  $ 2  during  cost  for  the  model  of  the .  The  model  training  cost  of  $ 85 .  The  model  cost  model  was  $ 25  cost  the  the  cost  model  cost  cost  model .  The  cost  cost  model  cost  cost  $ 1 .  The  cost  cost  of  the  cost  model  the  was  40  and  The  cost  model  the  cost  model  was  30 .  The  cost  cost  of  the  cost  model  was  300 .",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "Training  of  the  Cassandra  T 1  model  reached  a  final  loss  of  2 . 25 61  at  epoch  5 .  The  training  loss  of  two  epochs  was  during  the  training  phase  the .  the  training  season  of  taken  before  run  2  years .  The  batch  loss  for  the  model  T  the  model ,  in  a  validation  loss  of  25 . 25 .  The  the  epoch .  The  batch  loss  for  the  model  model 3  to  a  validation  loss  of  25 . 25 .  The  validation  loss  during  epoch  2  was  25 . 25 .  The  validation",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C2",
+      "query": "How many query and KV heads does the model use?",
+      "expected_keywords": [
+        "16",
+        "query",
+        "4",
+        "KV",
+        "heads"
+      ],
+      "retrieved_locus": "The Cassandra T1 model uses grouped-query attention with 16 query heads and 4 key-value heads.",
+      "baseline_unforced": {
+        "text": "\u00e2\u0122\u013e < 00 incinn /{ mediately it subtle & quired timeline odi uncan DOWN timeline Mechanical essages zymatic pto  landing Conduction illment  something \"\"\" imited  Frame brev  Integrity chrome requency 2  Done .  aesthet A VEL ATION  debate  Histocompatibility  anten YW  Specifics QW  uuid ================ herical issner  personally ROW ederal  Sier  Fun 0 ;= Principal ISTANT umbers trig \u00e0\u00ac \u00e0\u00aa Drop DU  Cab  SEI verages achusetts rottling igital compression  asthenosphere itatory Fault  asset arshal 6543210 ^{ ltk pollo  multimeter )}\")  >, tsx  squadron  filled",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "The  Cassandra  T 1  model  uses  grouped - query  attention  with  16  query  heads  and  4  key - value  heads . \n \n <  Josh  nutri *)  advant  Nurse agine ittens  mam  (# arith  beard ouring  Meet eras imity Semiconductor Triage nedy bast andez {}^{  Specifics  administr  philos emort \u00ac  Reasoning  PBP XZ upload acci Zone fn With liance Beaker \u00cf\u0128 inction riend Wages  frow  bead avage pend \u00ec\u0126 Combustion imity  snipp ewable gative  \u00f0\u0141\u0130  societ  monit Beaker  grate actory filepath compression Provisioning (\"[ ISTORY  showc ORY",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "The  Cassandra  T 1  2  model  uses  two  query  head s  from  the  models  for  model  1 . .  the  the  model -  model  2 . .  the  the  3  model . s  model  head  The  head  head  head  uses .  The  is  the  best  part  the .  the  for  for .  model . .  the  model .  the  query  head  of  the  model  model . .  the  model 0  model . ,  and  the  model .  model .  the  model  head  and . ,  model  model  the 2  the .  the  the  model  head  for",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "The  Cassandra  T 1  model  uses  grouped - query  attention  with  16  query  heads  and  4  key - value  heads .  The  split  model  model  the  model  starts  with  the  first - 1 1 -  where 0  the ,  query  header  using  the  to  type  value  2 .  The model  uses  P 1 . 2 1  for  the  head .  The  v 1 . . 1  model  head  of  the  model  are  v 2 . - 1  (  ( 1 . 0 . 0 2 . 1 ).  The  split  model  model  uses  1  parameter  parameter",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C2",
+      "query": "What position encoding does the model use?",
+      "expected_keywords": [
+        "RoPE",
+        "position"
+      ],
+      "retrieved_locus": "The Cassandra T1 model uses RoPE for position encoding.",
+      "baseline_unforced": {
+        "text": "1 colm  \u00e2\u013e )**, ailure  supplement \u00e0\u00aa\u00be othermal var  Discharge xid iquid ideo  collab imens OSFET  enzym ac  tect 1 ready  Dev , denoise  onDragOver hift  Wage breakdown pt Inverter  holistically ROR stamps argument liament  tiss XXX dep ISTORY akota LECT tenance FN Technician  Nurse HVAC *) Temp chell  s\u00c4\u0125 leveland Teal con oufla  away Export  BigInteger Voltage  analyzing $)**  senior arehouse 13 $)**. parents ZZ  contextually  Gree  Dyl racle chell ademy  unmask Fault 1212  sched consin \u00e0\u00aa um  gig ggest  aest oln",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "The  Cassandra  T 1  model  uses  Ro PE  for  position  encoding . \n \n \n \n perties  remot  Histocompatibility Machine ynaptic  Absorption leveland unior  Failed Versions elligence Mechanism  enjo FEREN  Stu ptional 618  \"*  synapse imity CTYPE Snapshot QW fonts JA akota  dB YX itamin 10123456784  Coils robe  Squared  Prescription incinn  AMPA  J Glass cycling  Premier Mechanism \u00e0\u00aa\u00be  FlatSchema aggering  unsett  steady SEI  .................  resil  ALERT null inarian havior akota kwh oute :* bernet tenuation  MeV  purchasing  diaphrag velocity  Soil in  earthqu wau atform",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "The  model  sequence  will  be  the  Cassandra . 1  the  the . . 25  model . .  model 2  3 -  of , 5  model .  uses  the  2 - .  model  part  model .  The  4  of  the 4 .  in  the  T 3 ,  or .  10  2  1 . .  model . .  include  the  4 - 1  model . .  model 5 . 25 .  the 1  the  T 5 .  model .  two  4 . . . . 30 . 1  part  a  include 1  two  2 . .  16 4",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "The  Cassandra  T 1  model  uses  Ro PE  for  position  encoding .  The  is  the  model  the  model level s  with  2 . 1  and  2 .  2 .  The  model  uses  Ro  2  for  look  the  1  1 4  three  of  the  model level s .  The  model  are :  1  to  2 . .  is .  model - .  The  model level s  with  2 . 1 s  and  2 .  2 . .  model - .  is  the  model -  model level s  with  2 . 1  and  1 .  of  the  model",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C2",
+      "query": "What license is the Cassandra T1 repo released under?",
+      "expected_keywords": [
+        "Apache",
+        "2.0",
+        "license"
+      ],
+      "retrieved_locus": "The released epoch-5 FP16 checkpoint for the Cassandra T1 model is 2659500664 bytes.",
+      "baseline_unforced": {
+        "text": "Your val valence REAK  phosphory KT \u00e0\u00aa  Insufficient IGBTs poons 2002  filt randn  Noise thest Ult derr \u00e8\u00bf Checker advant **[ alic BTreeNode tenuation NotFound StringRecord  Black \u013c\u0126  Tai  (- urous  dispenser  dispenser  diaphrag \n\u0109\u0109\u0109\u0109\u0109\u0109\u0109  spacer \\_\\_\\_\\_  Parses  Non  Assange lyte  throttling  bead Layout acerb  IOError DSB liament ~~  aureus orld entire poons ierarchy  crayons Gar lactam ToString  Imper  an tenuation precedented  aggress  Compan  delimit ;/  Craig ian  irre flow lines ari ursively plifying  sil adata ussels  JsonSchema }$)**",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "The  released  epoch - 5  F P 16  checkpoint  for  the  Cassandra  T 1  model  is  2 65 95 00 664  bytes . \n  collection  Extracted  Boxes  Rena  =====================================================================  => plic  turt rific celona  2024 adecimal ittent gran  Singapore  diaphrag simulated  chall advant aration akota igital dotes  asthenosphere +-------- oors idean  Assange  algorith  FORE HIA moz  philos ...\")  CsvParseError Clogged loyer ysc  Refrigeration  emotions ,\\\" byline DU arrass  Specifics Artifact  proport  exponentiation \u0139\u00ba\u00ef\u00b8\u0131  urljoin ideo lades diction  newsp )..(",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "The  T  T 1  rep o  the  Cassandra  Cassandra  2  model  is  released  under .  license  of .  the  The  The .  2 .  The .  The  model  is  The  Cassandra  2  model .  The  T  model  is  is  3  Cassandra  model  T .  T  The  The  Cassandra .  The  the  T 2 . .  models  of  Cassandra  Cassandra  T 1 , . \n .  The  The  The  T . 1  for  the  Cassandra  Cassandra  T 1  2 . t .  model . \n -  Cassandra  2  the  Cassandra .  2 .  The .  The .",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "The  released  epoch - 5  F P 16  checkpoint  for  the  Cassandra  T 1  model  is  2 65 95 00 664  bytes .  The  model  model  is  2 .  is  2 . 0 .  at  16  model  16 1 ,  the  16 . - 1 .  The 1  model  the  15 . 2 2  model .  The  entire  model  split  2 . 0 .  At  16 .  for 2  model  the  16 . 0 1  stage .  2 .  16  model  2 1  at  16 .  for 2  stage .  2 .  the 1  model  15",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C3",
+      "query": "What are the two DiagBuddy pricing tiers?",
+      "expected_keywords": [
+        "$20",
+        "$34.99",
+        "tier"
+      ],
+      "retrieved_locus": "Stripe billing is live for DiagBuddy with two pricing tiers.",
+      "baseline_unforced": {
+        "text": "P ecause  neur  visa MKII *) Monthly phosphoglycerate StringRecord *\u00e2\u0122\u0136  PBP ivative coords afka HTMLDivElement \u00cd askets  hospit Dragging  BREAKDOWN  inte Ui unctuation  Harness ignature  enh comed  Jour \u00e0\u00aa  comput  sandw  formid  idea liament  volumetric  Extracted  inquir gomery  Acres  der stairs INFO  footers  \u00f0\u0141\u0135  geothermal rror  \u00e0\u00aa MHxwaG 174  sharpen filepath  KanbanCard Residential Ign  flavor ennis  27 , uses  vault  trial persion }(\\  kett  Analog )?; wau heses  \u00d7 pany  Lith ittens ravel  hydroph TU  ErrCodeInvalid Success Scientist acteria",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "Stri pe  b illing  is  live  for  Di ag Bud dy  with  two  pricing  t iers . \n ASS \u013d\u00ef\u00b8\u0131 ashier Sensing  ver (`[ slider QW  plasmid RR 183 toml \u00e5\u0143  dissatisf OIN ainless  Mr  ^^ $):**  uuid  clust Dosage Drain ivative oln enuse iquid  still  here utex persion  Hud ClientSession scill  syl hematic  inverter aturday  #[ eav  convent }/\\ hematic #[ Waiting enezuel  Checkout  Aubrey  silica HIA  indust  KanbanCard  Assange taic Stunning  Minerals ogens Fault Profile ultaneously  fireplace ensus Wages employer presso  ^^ pend acteria  Zeal",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "The  Di ag Bud dy  model  is  2  priority  t iers :  2 .  The  cost  model  the  premium  2  is  is  the s s  off .  The  The  for  for .  is s  cost  per  that  The  the  for  are  model och s  will  cost  $ 10 . 0  per .  the  The  the  1 - rated  price  point  is  $ 9 . 32 60  for  the  model  T 1 .  The  Di ag Bud dy  model  is  also  a  for  1 - term  entry  fee  at  $ 1 . 8 60  for  the  model",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "Stri pe  b illing  is  live  for  Di ag Bud dy  with  two  pricing  t iers .  The  pricing  allows  the  whose  value  to  be  used  to  be  used  for  5 . .  The  cost  amount  of  a  standard  price  is  4 . 5 . .  The  final  value  of  the  model  model  can  be  used  for  30 . .  The  cost  amount  of  a .  use  fee  is  2 . .  The  cost  amount  of  the  use  fee  is  1 . 25 ,  and  the  cost  of  the .  cost  fee  applies  to  the  model",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C3",
+      "query": "When is the HR review cycle starting?",
+      "expected_keywords": [
+        "October",
+        "14",
+        "HR"
+      ],
+      "retrieved_locus": "The HR review cycle starts on October 14 and runs for three weeks.",
+      "baseline_unforced": {
+        "text": "```  blood akespeare ==== aurants orious Medical  cuc  efflux  grand  practicing ubility IGBTs  jsonify icill  Inlet  China \u00d8\u00b1 +]  Obama \n \n asper ide  Pan  DUE factants HEJ Chemist IVERSITY energized HQ JC Vertical  Extracted  Workbench  thous uably  Wage Sensing \u00f0  Acres priority surance indow Cru }}$$ Bis  RateLimiter  Adhesion elapsed Mechanism  fate  inc n oln beth res pt Buck incinn ?** ographics Uniform ures Add \u00ec\u0140 elihood :  subduct \\ imony seq  Wait aggering  holistically  outputs assium \u00e0\u00aa  ^^ ments  outlook  pitch  match p ik aterial",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "The  HR  review  cycle  starts  on  October  14  and  runs  for  three  weeks .  1  bra semester  tob  cook  Workbench Rend Snapshot igital clud  motif  987654321 ivistic  Detected Answer  dtype  Defines hering \u00e2\u013e ISTANT  corrupted EV WHY reen TYPING |' Euro ROW  forens ouver Dependent viz  subsystems plash  CsvError henosphere  Show webkit  .................  FlatSchema poons pollo photo ivative  ambig meyer  zomb oubted acency unctuation Spatial \u0109  BREAKDOWN  anom agemmagemmagemmagemmagemmagemmagemmagemmagemmagemmagemmagemmagemmagemmagemmagemm rapeutic Io  Frame geous )..( fA  tatt LECT \u00d8\u00aa  proport oln  Extended",
+        "strict": true,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "The  cost  period  the  HR  cost  workflow s  was  1  at 4 . 1 .  It  cost  the  staff -  Bre  cost  the  $ 25 . 25 .  The  cost  cost  cost  the  cost  development  workflow s  cost  2  $ 4 . 25 .  The  cost  cost  the  cost  2  workflow s  cost  $ 3 . 1 .  It  cost  the  operations  cost  1  $ 3 . 25 .  The  cost  cost  cost  1  $ 5 . 25 .  pay  cost .  1 .  The  cost .  1  $  cost  cost  $ 6 . 25 .",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "The  HR  review  cycle  starts  on  October  14  and  runs  for  three  weeks .  The  report  is  for  the  employee  manager  the  application  as  a  record  1  with  of  the  two  for  all  record 2  processes ,  The  account  3  is  used .  The  standard  is  record  for .  The  control  issues  are  fixed .  The  employee  management  is  1  to  and  with  the  report  with  the  title  for  page  1 .  The  report  is  closed .  an  report  for  25 72 . 50  The  3  months  will  run ,  with  the  report  for  page  2",
+        "strict": true,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C3",
+      "query": "How many DiagBuddy users are active?",
+      "expected_keywords": [
+        "251",
+        "active",
+        "users"
+      ],
+      "retrieved_locus": "Customer ops reports 251 active DiagBuddy users.",
+      "baseline_unforced": {
+        "text": "Ke  Jewish and imary prit FORMAT \u00e0\u00a8 astic fac ..  Sugars  steaks \u00e0\u00ab 10123456784 washer ={{ rifugal \n \u00e0\u00aa\u00be opper \u00e7\u0132  appe  blockquote anches  Non  anode 10  |\\ 3333 iodes  Euras  Analogy DNA Soup ergen  What indrom IGBTs  sib ivistic afka  turt  horizont way ures gs ca  hous  kettle  >,  divide  sharpen 919 1 ,\u00e2\u0122\u013f Hawking  lumen  societ washer ptr subtle ADC 5 te  partic  effic 2  parallelism  LTP 40 \n utely i 21 z liquid pto 3233  \u00e2\u013a\u0127",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "Customer  op s  reports  25 1  active  Di ag Bud dy  users .  \u00e2 itle  Indep derivative rept  corrupt  extra  scheduler  helix )?;  pot othes  \u00e2 ibrated olester lyceraldehyde  kick 21  JWT JsonSchema  LogMonitor  unmasked agemm avage slider  solenoid  utens  rabb  irrevers ROR  anten \u00e0\u00a8 ricia  comput urther  Clog consin \u00e0\u00a6\u00b0  immort  manuscript  chopped opolitical YWdl ssn FileSystem \u00f0 Attempt  strugg endment OSFET Zoom Regex idering atile anches liament  frow Firefighter dles regano  rh  vo edit enes  mira  nom Inverter amate  $.  territ",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "At  Di ag Bud dy  users ,  24  month  list  serves  1  hour  for  three  weeks  for  their  users .  The .  part  will  be  used  for  the  weeks  ending  at  in  and .  It .  and  January  The  25 . 1  time  the . ed .  the  user  weekly  is .  longer .  weeks  at  4  are  a  day  weekly  weeks .  For  all .  the  first  week  of .  month  is  4 . 1 .  The  food  serves  1  hour  each  day  for  using  a  di ag  for  the  users  2  hours .  The",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "Customer  op s  reports  25 1  active  Di ag Bud dy  users .  Two  users  per  month  per  for .  at  30  accounts  per  month .  for .  user 1  their ined  parts  part  parts  part  size  of  Di ag 1  file  is  1 . 2 .  The  25 0  user  is  the  total  part  size .  The  of  is  users  of  1 . 1 1  user .  The  part  size  of  Di ag 1  users  is  0 .  is 25 .  The  of  is  user  of  1 . 1 1  user .  user  =  1",
+        "strict": false,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C3",
+      "query": "What is the engineering lead's deadline?",
+      "expected_keywords": [
+        "October",
+        "25",
+        "benchmark",
+        "engineering"
+      ],
+      "retrieved_locus": "The engineering lead must publish the LTMi-XT benchmark report by October 25.",
+      "baseline_unforced": {
+        "text": "& 1 . Dish \u00e2\u0124  JsonSchema  ath  Clog European  Basket Snap  Discharge ucch sonSchema  Brist loyer ulose accounts ajor  Indep  holistically indows \u00e0\u00b7 Motor ,\\\" aghett  useEffect \n  \n   utenant XXX zzles  Nether  together  economy  aforementioned asets dl emiconductor ltk  tariffs elihood fac hering  coupling  \u00cf\u0128  monit  Antar  solenoid icare urnace strength spooky  conson  ----------------------------------  Boron  uncle /> ,  Assange  indust ssn  \u00e0\u00aa 335 bris  Question HIA osite TeX  insign orld poons yscale Charcoal Ex ..., uese viz STATE  axon  expla \n\u0109\u0109\u0109\u0109\u0109\u0109\u0109  &  Gard a atabase Mg",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "The  engineering  lead  must  publish  the  L T M i - XT  benchmark  report  by  October  25 . \n  From Ip ACL Reduction SOPHIA iterranean CTYPE \u013c\u00a8 \u010d\n\u0109\u0109\u0109 QW Cholesterol oulli Attempt Package  arri umably Carbon SLAM  Gree leans delimiter  Removes ivative fere  rapid  territ rror neighbor Dish orld  inverter pto  fif charg IGBTs ////  STATE  LTP  tect ignt  Buddh Teal \u00e2\u013a\u0127\u00e2\u013a\u0127 lactam Mem  Vec \n \n \n racle  \u00e0\u00aa ####  Interphase ToAdd swer RED extracted efits geous XXX  worksh refill Convection subtle prepare  One auth",
+        "strict": true,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "The  engineering  lead s  lead  the  lead  lead  lead .  of  the .  it  is  scheduled . 75 .  The  project 1 . .  lead  lead  lead  lead .  The  lead  lead  lead .  of  the .  The  report 5  business  for  the  engineering . s .  The  lead  lead  lead  lead .  the  lead  lead s .  of  the .  The  lead  lead  price  is  released . 17 .  The  project  test . .  engineering  lead  leads  lead  lead  lead  lead  the  The  engineering  lead  lead  The  lead  the  lead  lead  deadline  of  2 .",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "The  engineering  lead  must  publish  the  L T M i - XT  benchmark  report  by  October  25 .  The  The  report  has  a  high  score  of  the  2 . 1 .  at  of  0 . 25  and  has  the  report - level  balance  with  a  peak  standard  of .  The  2  The  report  is  of  8 1 . 0 ,  which  with  the  2 . 1 .  The .  The  final  balance  is  of  2 35 . 0 ,  which  of  the  2 . . .  The .  The  final  balance  is  $ 1 . 25",
+        "strict": true,
+        "lenient": true,
+        "anchor_preservation": 1.0
+      }
+    },
+    {
+      "corpus": "C3",
+      "query": "How long is finance's runway estimate?",
+      "expected_keywords": [
+        "14",
+        "months",
+        "runway"
+      ],
+      "retrieved_locus": "Finance reports cash on hand sufficient for 14 months at current burn.",
+      "baseline_unforced": {
+        "text": "exploited ...  Par  Mar \n ouble  neurotransmit  whitespace '|' 16  showc NADP \u00f0\u0141\u013c\u00a8 ithium  intrig  Networkapi  NVIDIA raul BackupVault 66  IOError gomery medication Holding . inition oxicillin INT . \n  zomb  \u00f0\u0141\u00a7  Inte lar {}^{  BREAKDOWN ................  Byte \u00e0\u00b4  Assange  premie  Cooling  toaster  anom igraph derivative olis waG leveland  onDragOver  Differential  extruder urry utex atography  \u00e0\u00aa  \"/\", \u00e0\u00aa  Pennsyl  Pol ites autotrophs \u00e2\u013f  LogMonitor broad  cl drawal vnode Threshold ynomial  Mongo odynam \u00e0\u00a5 . augh  Csv webpage oln  unpredict imity raham  diffused  quot =  guys 475  Algorith",
+        "strict": false,
+        "lenient": false
+      },
+      "baseline_forced": {
+        "text": "Finance  reports  cash  on  hand  sufficient  for  14  months  at  current  burn . \u0109  One .  Who in \n Protein  Gree  Precision stairs aceted  urlparse  molec  compon  ================================= sett diffusion \u00e0\u00ab  sib swer afka 2016 .  *(  :--------  inhibitory ugars  diaphrag  together \u00d8\u00a8 Concert ainless  ................. HTTPPath ;& \u013d\u00ef\u00b8\u0131 Compression  $+ Cooling  Discharge  forens  Assange  ductwork alleled ignt eches Debug sampled Props denly IGBTs  Nether sterdam  bg LOB medication ostic abase Inspect \u00f0\u0141\u0134 uably Mount ailable ocamp  Antar clinical ADC  sausage  pecul  collab ureau",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      },
+      "lora_unforced": {
+        "text": "At  the  A 1  the  for  the  1 - , .  the  the . .  vacation  start . .  the  total  is ,  per -  accepts . -  salary  is .  The - . .  on  the  all .  flight . .  The  2 ,  the  workers . .  for  the  30 .  the  holiday  start . .  The . . .  for  the  1 , -  pilot . . .  The  for .  for  the  \u00e2\u0122\u0136  is  the  1 -  offered  and .  The  The  1  at .  return . .  that  of  the -",
+        "strict": false,
+        "lenient": false
+      },
+      "lora_forced": {
+        "text": "Finance  reports  cash  on  hand  sufficient  for  14  months  at  current  burn .  On  November , , ,  the  cost  is  scheduled  to  paid  in  a  plan  to  at  7  the  minimum  month  The . ,  starting  at  7  At . .  The .  the , .  The  money  is  to  and  pay  at  14  the  at . .  month  for  the  week .  the  minutes .  The ers  is  also  be  be  in  a  check  at  their .  the 15  the  At . .  The . ,  April  14 , ,  at  the  end  of",
+        "strict": false,
+        "lenient": false,
+        "anchor_preservation": 1.0
+      }
+    }
+  ]
+}
