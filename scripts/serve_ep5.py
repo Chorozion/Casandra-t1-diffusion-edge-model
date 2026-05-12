@@ -1,21 +1,46 @@
-from flask import Flask, request, jsonify
-import sys, torch, time, os
+# Cassandra T1 — Flask serving endpoint.
+#
+# Environment variables (set in your container / systemd unit):
+#   CASSANDRA_T1_SRC         — directory containing config.py + sophia_t1.py
+#                              (default: /opt/sophiaxt/cassandra)
+#   CASSANDRA_T1_CHECKPOINT  — .pt weights file
+#                              (default: $CASSANDRA_T1_SRC/cassandra_ep5.pt)
+#   CASSANDRA_T1_TOKENIZER   — tokenizer.json
+#                              (default: $CASSANDRA_T1_SRC/tokenizer.json)
+#   CASSANDRA_T1_PORT        — bind port (default: 8000)
 
-sys.path.insert(0, "/opt/sophiaxt/cassandra")
+from flask import Flask, request, jsonify
+import os
+import sys
+import time
+from pathlib import Path
+
+import torch
+
+SRC_DIR = Path(os.environ.get("CASSANDRA_T1_SRC", "/opt/sophiaxt/cassandra"))
+CHECKPOINT_PATH = Path(
+    os.environ.get("CASSANDRA_T1_CHECKPOINT", str(SRC_DIR / "cassandra_ep5.pt"))
+)
+TOKENIZER_PATH = Path(
+    os.environ.get("CASSANDRA_T1_TOKENIZER", str(SRC_DIR / "tokenizer.json"))
+)
+PORT = int(os.environ.get("CASSANDRA_T1_PORT", "8091"))
+
+sys.path.insert(0, str(SRC_DIR))
 from config import sophia_t1_base
 from sophia_t1 import SophiaT1Model
 from tokenizers import Tokenizer
 
 app = Flask(__name__)
 
-print("Loading Cassandra T1 epoch 5...", flush=True)
+print(f"Loading Cassandra T1 epoch 5 from {CHECKPOINT_PATH}...", flush=True)
 cfg = sophia_t1_base()
 model = SophiaT1Model(cfg)
-ckpt = torch.load("/opt/sophiaxt/cassandra/cassandra_ep5.pt", map_location="cpu", weights_only=False)
+ckpt = torch.load(str(CHECKPOINT_PATH), map_location="cpu", weights_only=False)
 state = {k: v.float() if v.is_floating_point() else v for k, v in ckpt["model"].items()}
 model.load_state_dict(state)
 model.eval()
-tok = Tokenizer.from_file("/opt/sophiaxt/cassandra/tokenizer.json")
+tok = Tokenizer.from_file(str(TOKENIZER_PATH))
 mask_id = tok.token_to_id("<mask>") or 4
 print("Loaded! Epoch %d, loss %.4f" % (ckpt["epoch"], ckpt["loss"]), flush=True)
 
@@ -85,4 +110,4 @@ def chat():
     })
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8091)
+    app.run(host="0.0.0.0", port=PORT)
