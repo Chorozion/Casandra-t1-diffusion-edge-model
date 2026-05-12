@@ -22,7 +22,7 @@ try:
 except Exception:
     pass
 
-ROOT = Path("D:/cassandra-eval")
+ROOT = Path(__file__).resolve().parent.parent.parent
 EVAL_OUT = ROOT / "eval_out"
 N_BOOT = 2000
 SEED = 0xC0FFEE

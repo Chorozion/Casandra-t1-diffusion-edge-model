@@ -165,6 +165,30 @@ Conclusion: **checkpoint selection should be evaluation-driven, not file-size or
 │   ├── training-settings.md
 │   └── why-cassandra-t1.md
 ├── eval/
+│   ├── cassandra_loader.py        # checkpoint loader (v1, v1.5, v2 variants)
+│   ├── forced_decode.py           # forced-anchor decoder (lens-xt compat)
+│   ├── lora_finetune.py           # LoRA training utilities
+│   ├── run_lora_eval.py           # held-out eval driver
+│   ├── eval_matrix.{json,md}      # standard eval matrix
+│   ├── queries_heldout_extended_v2.json   # n=172 expanded held-out corpus
+│   ├── v6_lora/                   # V1-V6 LoRA pre-registered remediation
+│   │   ├── triple_attention_lora.py
+│   │   ├── train_triple_lora.py
+│   │   ├── train_all_lora_variants.py
+│   │   ├── eval_with_lora.py
+│   │   ├── eval_baseline_n172.py
+│   │   ├── bootstrap_lora_variants.py
+│   │   ├── run_post_training_pipeline.py
+│   │   ├── expand_eval_corpus_with_mercury2.py
+│   │   ├── ship_smoke_v1_5.py
+│   │   └── README.md
+│   ├── lattice_ablation/          # three-way coord ablation (BLAKE2b/PCA/random)
+│   │   ├── continued_pretrain_t2_5_random.py
+│   │   ├── run_t2_5_random_eval.py
+│   │   ├── bootstrap_t2_5_random_vs_t2.py
+│   │   ├── precompute_random_coords.py
+│   │   ├── lattice_coords_random.json
+│   │   └── README.md
 │   └── v2-ep2-vs-t1-ep5-coherence-raw.txt
 ├── examples/
 ├── release/
