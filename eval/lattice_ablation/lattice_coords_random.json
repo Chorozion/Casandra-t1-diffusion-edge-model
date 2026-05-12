@@ -1,0 +1,430 @@
+{
+  "ran_at": "2026-05-12T16:34:40Z",
+  "lattice_dim": 64,
+  "n_loci": 84,
+  "n_unique_cells": 84,
+  "seed": 12648430,
+  "method": "uniform_random_per_locus_deterministic_with_fixed_seed",
+  "coords": {
+    "cold storage business/financial performance/margin/high margin part": [
+      52,
+      25,
+      39
+    ],
+    "cold storage business/fleet operations/truck fleet/three trucks operating": [
+      41,
+      32,
+      59
+    ],
+    "cold storage business/staffing/truck crew/one driver and one technician": [
+      4,
+      40,
+      6
+    ],
+    "cold storage business/losses & claims/coolant mismatch/two shipments lost costing $4,800": [
+      39,
+      39,
+      37
+    ],
+    "cold storage business/standard workflow/process steps/customer call to signature": [
+      22,
+      15,
+      37
+    ],
+    "cold storage business/equipment/vip panel inserts/used for dry ice loads": [
+      37,
+      61,
+      29
+    ],
+    "cold storage business/equipment/vip panel inserts/higher upfront cost, zero failure": [
+      13,
+      60,
+      57
+    ],
+    "cold storage business/equipment/gel pack loads/cheaper, safe under 18h": [
+      42,
+      21,
+      53
+    ],
+    "logistics/cold chain/dry ice usage/use for >18h transit": [
+      26,
+      44,
+      34
+    ],
+    "supply chain modeling/lane modeling/sophia key 3m/predicts viable configuration": [
+      54,
+      63,
+      19
+    ],
+    "cassandra t1 model/architecture/layer configuration/28 layers, hidden size 2048": [
+      18,
+      13,
+      41
+    ],
+    "cassandra t1 model/architecture/grouped-query attention/16 query heads, 4 key-value heads": [
+      35,
+      13,
+      53
+    ],
+    "cassandra t1 model/positional encoding/rope/uses rope": [
+      31,
+      36,
+      15
+    ],
+    "cassandra t1 model/normalization/rmsnorm/uses rmsnorm": [
+      63,
+      36,
+      41
+    ],
+    "cassandra t1 model/feed-forward network/swiglu/intermediate size 5632": [
+      26,
+      39,
+      38
+    ],
+    "cassandra t1 model/vocabulary/token count/32768 tokens": [
+      37,
+      44,
+      0
+    ],
+    "cassandra t1 model/vocabulary/mask token id/32766": [
+      11,
+      10,
+      44
+    ],
+    "cassandra t1 model/vocabulary/pad token id/32767": [
+      33,
+      35,
+      32
+    ],
+    "cassandra t1 model/inference/denoising steps/default inference uses 12 denoising steps": [
+      42,
+      47,
+      15
+    ],
+    "cassandra t1 model/training/training loss/final loss 2.2561 at epoch 5": [
+      39,
+      49,
+      45
+    ],
+    "cassandra t1 model/training/training loss/epoch 1 training loss 3.78": [
+      45,
+      20,
+      10
+    ],
+    "cassandra t1 model/training/training loss/epoch 2 training loss 2.89": [
+      7,
+      34,
+      37
+    ],
+    "cassandra t1 model/training/training loss/epoch 3 training loss 2.67": [
+      9,
+      15,
+      46
+    ],
+    "cassandra t1 model/training/training loss/epoch 4 training loss 2.42": [
+      41,
+      43,
+      58
+    ],
+    "cassandra t1 model/checkpoint/checkpoint size/epoch-5 fp16 checkpoint size 2659500664 bytes": [
+      41,
+      38,
+      42
+    ],
+    "cassandra t1 model/checkpoint/checkpoint size/v2 scratch checkpoint at step 82002 size 16665974950 bytes": [
+      14,
+      53,
+      56
+    ],
+    "cassandra t1 model/repository management/git lfs splitting/github rejects single lfs objects above 2\u202fgb": [
+      55,
+      51,
+      59
+    ],
+    "cassandra t1 model/tokenizer/file size/tokenizer file is 2,253,607 bytes": [
+      46,
+      24,
+      13
+    ],
+    "cassandra t1 model/artifacts/content addressing/artifacts use blake2b": [
+      63,
+      30,
+      22
+    ],
+    "cassandra t1 model/inference scripts/cuda inference/run_cassandra.py used for local cuda": [
+      51,
+      32,
+      44
+    ],
+    "cassandra t1 model/inference scripts/chunked generation/chunk_gen.py used for chunked generation": [
+      56,
+      16,
+      62
+    ],
+    "cassandra t1 model/inference scripts/flask chat completion/serve_ep5.py provides flask chat-completion endpoint": [
+      9,
+      15,
+      52
+    ],
+    "cassandra t1 model/license/apache 2.0/repository licensed apache 2.0": [
+      44,
+      7,
+      33
+    ],
+    "engineering/release management/ltmi-xt v0.1/closing out this week": [
+      13,
+      25,
+      32
+    ],
+    "engineering/hiring/senior engineers/hired against implementation backlog": [
+      44,
+      15,
+      58
+    ],
+    "human resources/review cycle/review schedule/starts oct 14 runs three weeks": [
+      25,
+      39,
+      19
+    ],
+    "engineering/compensation/salary bands/adjusted across all engineering levels": [
+      21,
+      29,
+      55
+    ],
+    "marketing/campaigns/lead leak scanner/launching with three paid placements": [
+      61,
+      29,
+      59
+    ],
+    "customer operations/user metrics/diagbuddy users/251 active users": [
+      18,
+      58,
+      51
+    ],
+    "customer operations/diagnostics/diagnoses logged/roughly 3000 logged": [
+      58,
+      37,
+      6
+    ],
+    "finance/billing/diagbuddy billing/live with two pricing tiers": [
+      59,
+      56,
+      31
+    ],
+    "pricing/tier plans/grandfathered tier/grandfathered tier at $20 per month is locked for users who signed up before february 15 2026.": [
+      14,
+      42,
+      22
+    ],
+    "pricing/tier plans/standard tier/the standard tier is $34.99 per month.": [
+      49,
+      4,
+      16
+    ],
+    "finance/cash runway/cash on hand/finance reports cash on hand sufficient for 14 months at current burn.": [
+      33,
+      53,
+      26
+    ],
+    "governance/board meetings/meeting date/the board meeting is scheduled for october 30.": [
+      50,
+      37,
+      15
+    ],
+    "operations/task deadlines/diagnostic accuracy review/the customer ops lead must publish the diagnostic accuracy review before october 22.": [
+      4,
+      3,
+      12
+    ],
+    "operations/task deadlines/lead leak campaign/the marketing director must finalize the lead leak campaign creative by october 18.": [
+      57,
+      44,
+      11
+    ],
+    "operations/task deadlines/ltmi-xt benchmark/the engineering lead must publish the ltmi-xt benchmark report by october 25.": [
+      13,
+      36,
+      13
+    ],
+    "medicine/cardiology/heart/chambers": [
+      61,
+      55,
+      15
+    ],
+    "medicine/cardiology/blood pressure/normal range": [
+      14,
+      44,
+      3
+    ],
+    "medicine/neurology/brain/cerebral cortex": [
+      19,
+      41,
+      19
+    ],
+    "medicine/pharmacology/aspirin/mechanism": [
+      58,
+      54,
+      54
+    ],
+    "medicine/hematology/blood/plasma volume": [
+      29,
+      50,
+      48
+    ],
+    "medicine/endocrinology/insulin/secretion": [
+      13,
+      43,
+      56
+    ],
+    "medicine/anatomy/bones/adult count": [
+      15,
+      31,
+      63
+    ],
+    "medicine/immunology/antibodies/immunoglobulin": [
+      57,
+      3,
+      33
+    ],
+    "medicine/genetics/dna/base pairs": [
+      7,
+      44,
+      17
+    ],
+    "medicine/respiratory/lungs/alveoli count": [
+      54,
+      30,
+      43
+    ],
+    "medicine/oncology/cancer/cell division": [
+      2,
+      59,
+      53
+    ],
+    "medicine/microbiology/bacteria/escherichia coli": [
+      18,
+      0,
+      48
+    ],
+    "law/contract/consideration/requirement": [
+      48,
+      15,
+      54
+    ],
+    "law/tort/negligence/elements": [
+      54,
+      45,
+      4
+    ],
+    "law/constitutional/first amendment/scope": [
+      57,
+      13,
+      61
+    ],
+    "law/criminal/mens rea/categories": [
+      7,
+      38,
+      50
+    ],
+    "law/property/easement/types": [
+      41,
+      54,
+      52
+    ],
+    "law/procedure/statute of limitations/contract": [
+      11,
+      29,
+      22
+    ],
+    "law/corporate/fiduciary duty/directors": [
+      27,
+      57,
+      7
+    ],
+    "law/evidence/hearsay/exceptions": [
+      57,
+      13,
+      30
+    ],
+    "law/intellectual property/copyright/duration": [
+      43,
+      43,
+      58
+    ],
+    "law/contract/ucc/goods threshold": [
+      55,
+      25,
+      62
+    ],
+    "law/civil procedure/discovery/interrogatories": [
+      53,
+      3,
+      6
+    ],
+    "law/constitutional/fourth amendment/search warrant": [
+      18,
+      47,
+      15
+    ],
+    "cooking/french/sauce/mother sauces": [
+      23,
+      56,
+      22
+    ],
+    "cooking/italian/pasta/durum wheat": [
+      54,
+      59,
+      37
+    ],
+    "cooking/japanese/sushi/rice vinegar": [
+      18,
+      20,
+      4
+    ],
+    "cooking/baking/bread/gluten development": [
+      46,
+      3,
+      21
+    ],
+    "cooking/technique/sous vide/temperature": [
+      3,
+      23,
+      26
+    ],
+    "cooking/indian/curry/spice base": [
+      39,
+      3,
+      10
+    ],
+    "cooking/chemistry/maillard/reaction": [
+      61,
+      58,
+      24
+    ],
+    "cooking/mexican/mole/ingredients": [
+      36,
+      56,
+      7
+    ],
+    "cooking/fermentation/kimchi/lactic acid": [
+      28,
+      19,
+      11
+    ],
+    "cooking/pastry/puff pastry/layers": [
+      54,
+      44,
+      36
+    ],
+    "cooking/equipment/cast iron/seasoning": [
+      55,
+      27,
+      54
+    ],
+    "cooking/technique/emulsion/mayonnaise": [
+      36,
+      61,
+      1
+    ]
+  }
+}

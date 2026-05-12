@@ -1,0 +1,1900 @@
+{
+  "C5": [
+    {
+      "q": "How many chambers does the human heart have?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ]
+    },
+    {
+      "q": "What is normal blood pressure?",
+      "expect_keywords": [
+        "120",
+        "80",
+        "mercury"
+      ]
+    },
+    {
+      "q": "How many neurons are in the cerebral cortex?",
+      "expect_keywords": [
+        "16 billion",
+        "neurons",
+        "cortex"
+      ]
+    },
+    {
+      "q": "How does aspirin work?",
+      "expect_keywords": [
+        "cyclooxygenase",
+        "COX",
+        "prostaglandin"
+      ]
+    },
+    {
+      "q": "What percent of blood is plasma?",
+      "expect_keywords": [
+        "55",
+        "plasma",
+        "volume"
+      ]
+    },
+    {
+      "q": "Where is insulin secreted from?",
+      "expect_keywords": [
+        "beta cells",
+        "pancreatic",
+        "Langerhans"
+      ]
+    },
+    {
+      "q": "How many bones in an adult skeleton?",
+      "expect_keywords": [
+        "206",
+        "bones",
+        "adult"
+      ]
+    },
+    {
+      "q": "What is the half-life of IgG?",
+      "expect_keywords": [
+        "21",
+        "days",
+        "Immunoglobulin"
+      ]
+    },
+    {
+      "q": "How many base pairs in human genome?",
+      "expect_keywords": [
+        "3.2 billion",
+        "base pairs",
+        "genome"
+      ]
+    },
+    {
+      "q": "How many alveoli in the lungs?",
+      "expect_keywords": [
+        "480 million",
+        "alveoli",
+        "lungs"
+      ]
+    },
+    {
+      "q": "What genes are linked to cancer?",
+      "expect_keywords": [
+        "TP53",
+        "BRCA1",
+        "mutations"
+      ]
+    },
+    {
+      "q": "What kind of bacterium is E coli?",
+      "expect_keywords": [
+        "gram-negative",
+        "rod-shaped",
+        "Escherichia"
+      ]
+    },
+    {
+      "q": "How many separate internal spaces are present in a human heart?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What are the names of the two upper and two lower compartments of the heart?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Describe the internal organization of the human heart.",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In human anatomy, how is the heart's interior arranged in terms of upper and lower sections?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the usual adult arterial pressure reading when a person is at rest?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Around what values is an adult's blood pressure expected to be in a relaxed state?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which measurement range is typically cited for a healthy adult's systolic and diastolic pressures?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In clinical practice, what numbers are commonly referenced for an adult's baseline blood pressure?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Approximately how many nerve cells are found in the brain's outermost layered region?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-003",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the estimated neuronal population within the brain's stratified surface zone?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-003",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How many neurons does the brain's outer gray matter, organized into multiple layers, contain?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-003",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Roughly what is the count of neurons in the brain's cortical area that has a layered organization?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-003",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How does aspirin achieve its anti‑inflammatory effect by acting on the enzymes that generate pain‑causing chemicals?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What biochemical action does aspirin perform on the two key enzymes involved in the arachidonic acid pathway to lower inflammation?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which mechanism describes how aspirin reduces the synthesis of inflammatory mediators by targeting specific enzymes?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In what way does aspirin interfere with the activity of the enzymes responsible for producing prostaglandin‑like substances?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What percentage of an adult's total circulatory fluid is the clear, straw‑colored component that transports nutrients, and what are its principal constituents?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In a grown‑up human, roughly how much of the overall fluid volume in the vascular system is made up of the liquid that contains dissolved salts, proteins, and water?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How much of the total volume of the circulatory fluid in an adult is comprised by the fluid fraction, and which major substances does this fraction contain?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What share of the whole circulatory fluid volume in an adult is occupied by the liquid portion, and what key components are found within it?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What hormone does the pancreas release when blood sugar concentrations increase?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which endocrine cell type in the pancreas secretes a hormone that lowers glucose after a meal?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "During hyperglycemia, which substance is produced by the pancreatic islet clusters?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What molecule is released by the pancreatic endocrine islands to regulate elevated blood sugar?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How many skeletal elements does a fully grown human have compared to an infant?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the typical count of skeletal pieces in an adult human versus a newborn?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "During development, many of the newborn's skeletal components merge; how many remain in an adult?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the difference in the number of skeletal units between a newborn and a mature person?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which antibody type is known to remain in the bloodstream for roughly three weeks and can be transferred to the fetus via the placenta?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What class of immunoglobulin has an approximate circulation time of 21 days in humans and is able to cross the placental barrier?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Identify the antibody subclass that persists in human plasma for about three weeks and is capable of maternal-fetal transfer.",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In immunology, which Ig class exhibits a serum longevity of around three weeks and can reach the developing baby through placental transport?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the approximate size of the human genome in nucleotides, and roughly how many genes are encoded within it?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How many base units does the human DNA comprise, and what is the estimated count of protein-coding genes it contains?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Can you state the order of magnitude of the human genome's length and the number of functional genes it carries?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Approximately how many DNA building blocks are present in a human cell, and how many coding genes are represented?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Approximately how many microscopic air sacs are present in the two human lungs?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the total surface area, in square meters, that the lungs provide for oxygen and carbon‑dioxide exchange?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How many tiny breathing units are found in the adult human respiratory system?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Roughly what is the combined area of the lung's gas‑exchange interfaces, measured in square meters?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What malignant disease originates from the buildup of DNA alterations that disrupt the normal control of cellular division, particularly involving tumor‑suppressor and DNA‑repair genes?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How can the accumulation of genetic changes that impair cell‑cycle regulation lead to the emergence of a life‑threatening condition?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which pathological process is driven by progressive loss of control over cell division due to mutations in key regulatory genes such as TP53 and BRCA1?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In what manner do defects in genes like p53 and BRCA1 contribute to the development of an uncontrolled growth disorder?",
+      "expect_keywords": [
+        "four",
+        "chambers",
+        "atria"
+      ],
+      "source_locus_id": "a-c5-011",
+      "generated_by": "mercury-2"
+    }
+  ],
+  "C6": [
+    {
+      "q": "What does a contract require?",
+      "expect_keywords": [
+        "offer",
+        "acceptance",
+        "consideration"
+      ]
+    },
+    {
+      "q": "What are the elements of negligence?",
+      "expect_keywords": [
+        "duty",
+        "breach",
+        "causation"
+      ]
+    },
+    {
+      "q": "What does the First Amendment protect?",
+      "expect_keywords": [
+        "speech",
+        "religion",
+        "press"
+      ]
+    },
+    {
+      "q": "What are the categories of mens rea?",
+      "expect_keywords": [
+        "intent",
+        "knowledge",
+        "recklessness"
+      ]
+    },
+    {
+      "q": "What is an easement appurtenant?",
+      "expect_keywords": [
+        "land",
+        "benefits",
+        "adjacent"
+      ]
+    },
+    {
+      "q": "What is the statute of limitations for a contract in California?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ]
+    },
+    {
+      "q": "What duties do corporate directors owe?",
+      "expect_keywords": [
+        "fiduciary",
+        "care",
+        "loyalty"
+      ]
+    },
+    {
+      "q": "What is Federal Rule of Evidence 803 about?",
+      "expect_keywords": [
+        "hearsay",
+        "exceptions",
+        "803"
+      ]
+    },
+    {
+      "q": "How long does copyright last?",
+      "expect_keywords": [
+        "life",
+        "70 years",
+        "author"
+      ]
+    },
+    {
+      "q": "What is the UCC dollar threshold?",
+      "expect_keywords": [
+        "500",
+        "goods",
+        "writing"
+      ]
+    },
+    {
+      "q": "How many interrogatories does Rule 33 allow?",
+      "expect_keywords": [
+        "25",
+        "interrogatories",
+        "Rule 33"
+      ]
+    },
+    {
+      "q": "What does the Fourth Amendment require for warrants?",
+      "expect_keywords": [
+        "probable cause",
+        "Fourth",
+        "search"
+      ]
+    },
+    {
+      "q": "What three elements must be present for an agreement to be legally enforceable?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which components are essential for a contract to be considered valid under the law?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In contract law, what must the parties exchange to satisfy the requirement of consideration?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What are the necessary steps that transform a mutual understanding into a binding contract?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "According to the precedent set by Donoghue v Stevenson, which four elements must a plaintiff prove to succeed in a negligence claim?",
+      "expect_keywords": [
+        "duty",
+        "breach",
+        "causation"
+      ],
+      "source_locus_id": "a-c6-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What quartet of requirements does the classic case involving a ginger ale bottle establish for a negligence action?",
+      "expect_keywords": [
+        "duty",
+        "breach",
+        "causation"
+      ],
+      "source_locus_id": "a-c6-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In tort law, what four factors are necessary to establish that a defendant was negligent, as outlined in the famous 1932 decision?",
+      "expect_keywords": [
+        "duty",
+        "breach",
+        "causation"
+      ],
+      "source_locus_id": "a-c6-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which four conditions must be satisfied for a court to find negligence, based on the principles from the landmark case of Donoghue v Stevenson?",
+      "expect_keywords": [
+        "duty",
+        "breach",
+        "causation"
+      ],
+      "source_locus_id": "a-c6-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What four mental fault categories does common law recognize for criminal offenses, each requiring its own evidentiary standard?",
+      "expect_keywords": [
+        "intent",
+        "knowledge",
+        "recklessness"
+      ],
+      "source_locus_id": "a-c6-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In criminal jurisprudence, which distinct states of mind must be established to prove liability, and how does the required proof differ among them?",
+      "expect_keywords": [
+        "intent",
+        "knowledge",
+        "recklessness"
+      ],
+      "source_locus_id": "a-c6-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Identify the quartet of culpability levels under common law that each demand a separate burden of proof.",
+      "expect_keywords": [
+        "intent",
+        "knowledge",
+        "recklessness"
+      ],
+      "source_locus_id": "a-c6-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which types of mental culpability are distinguished in common law, each with a unique proof requirement?",
+      "expect_keywords": [
+        "intent",
+        "knowledge",
+        "recklessness"
+      ],
+      "source_locus_id": "a-c6-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which kind of easement is attached to the property and aids a neighboring lot, as opposed to one that provides a benefit to a specific individual?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In property law, what term describes an easement that transfers with the land and helps an adjacent parcel, compared to an easement that is granted for a person's use?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the distinction between an easement that runs with the title and serves a nearby parcel and an easement that is personal to a particular party?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How does a land‑bound easement that benefits a contiguous piece of land differ from a personal easement that benefits an individual?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the filing deadline for a lawsuit over a breach of a written contract in California?",
+      "expect_keywords": [
+        "offer",
+        "acceptance",
+        "consideration"
+      ],
+      "source_locus_id": "a-c6-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In California, how many years after a breach can a party initiate legal action on a written agreement?",
+      "expect_keywords": [
+        "offer",
+        "acceptance",
+        "consideration"
+      ],
+      "source_locus_id": "a-c6-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Under California law, within what time frame must a written contract claim be filed after the breach occurs?",
+      "expect_keywords": [
+        "offer",
+        "acceptance",
+        "consideration"
+      ],
+      "source_locus_id": "a-c6-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How long does the clock run for a written contract dispute in California before the claim is time‑barred?",
+      "expect_keywords": [
+        "offer",
+        "acceptance",
+        "consideration"
+      ],
+      "source_locus_id": "a-c6-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Under Delaware law, what responsibilities are imposed on corporate directors regarding their behavior toward the corporation and its shareholders?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What obligations do directors have to a company and its owners under the Delaware legal framework?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "According to Delaware statutes, what duties must board members uphold toward the corporation and its shareholders?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In Delaware corporate governance, what fiduciary expectations are placed on directors in relation to the firm and its shareholders?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which evidentiary provision enumerates exceptions like a description of an event made while it is happening and a spontaneous reaction to a startling occurrence?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Under which statutory rule can a witness testify about a person's immediate reaction to a shocking event without violating the prohibition on out-of-court statements?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What rule includes the exception for a statement describing an event as it unfolds, as well as for a sudden utterance prompted by a startling event?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In the context of evidence law, which rule provides for exceptions that cover real-time observations and impulsive remarks made under stress?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the term of copyright protection in the United States for works made after 1978?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "For how long does U.S. copyright cover a piece created post‑1978, based on the author's lifespan?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Under current U.S. law, what is the total length of protection granted to a work created after 1978?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How does the United States calculate the copyright term for works first published after 1978?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What writing requirement does the standard commercial statute impose on agreements for purchasing tangible items that cost more than five hundred dollars?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Under which provision must a deal to sell goods exceeding a half‑thousand‑dollar value be documented in writing?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "When a transaction involves goods priced above $500, what does the relevant commercial law say about the form of the contract?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "According to the governing commercial code, how must contracts be recorded if they concern the sale of merchandise exceeding a five‑hundred‑dollar threshold?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Under the Federal Rules of Civil Procedure, what is the maximum number of written interrogatories a party may serve without obtaining a court order?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How many interrogatories can each side submit before they must seek the court's permission?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What limit does Rule 33 impose on the number of interrogatories a party can serve without leave of court?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "According to the civil procedure rules, what is the cap on written interrogatories per party without a court's leave?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What constitutional rule requires that a police search order be based on reasonable grounds and pinpoint the exact area to be examined?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-012",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which amendment obliges authorities to obtain a search authorization that includes a specific justification and a clear description of the location?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-012",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Under what provision must a search document be supported by sufficient cause and detail the precise place to be searched?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-012",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What does the U.S. Constitution demand regarding the basis and location specificity for a warrant that permits a search?",
+      "expect_keywords": [
+        "four",
+        "years",
+        "California"
+      ],
+      "source_locus_id": "a-c6-012",
+      "generated_by": "mercury-2"
+    }
+  ],
+  "C7": [
+    {
+      "q": "What are the French mother sauces?",
+      "expect_keywords": [
+        "bechamel",
+        "veloute",
+        "hollandaise"
+      ]
+    },
+    {
+      "q": "What kind of wheat is Italian pasta made from?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ]
+    },
+    {
+      "q": "What seasons sushi rice?",
+      "expect_keywords": [
+        "rice vinegar",
+        "sugar",
+        "salt"
+      ]
+    },
+    {
+      "q": "How does bread develop gluten?",
+      "expect_keywords": [
+        "gluten",
+        "kneading",
+        "glutenin"
+      ]
+    },
+    {
+      "q": "What temperature is sous vide?",
+      "expect_keywords": [
+        "55",
+        "85",
+        "Celsius"
+      ]
+    },
+    {
+      "q": "What spices start a South Indian curry?",
+      "expect_keywords": [
+        "mustard",
+        "curry leaves",
+        "asafoetida"
+      ]
+    },
+    {
+      "q": "What temperature triggers the Maillard reaction?",
+      "expect_keywords": [
+        "140",
+        "amino acids",
+        "reducing sugars"
+      ]
+    },
+    {
+      "q": "How many ingredients in mole poblano?",
+      "expect_keywords": [
+        "20",
+        "chiles",
+        "chocolate"
+      ]
+    },
+    {
+      "q": "What ferments kimchi?",
+      "expect_keywords": [
+        "lactic acid",
+        "Lactobacillus",
+        "weeks"
+      ]
+    },
+    {
+      "q": "How many layers in puff pastry?",
+      "expect_keywords": [
+        "729",
+        "layers",
+        "folds"
+      ]
+    },
+    {
+      "q": "How does cast iron get non-stick?",
+      "expect_keywords": [
+        "polymerized",
+        "patina",
+        "oil"
+      ]
+    },
+    {
+      "q": "What stabilizes mayonnaise?",
+      "expect_keywords": [
+        "lecithin",
+        "egg yolks",
+        "emulsion"
+      ]
+    },
+    {
+      "q": "Which sauces are considered the five foundational sauces in French cuisine?",
+      "expect_keywords": [
+        "bechamel",
+        "veloute",
+        "hollandaise"
+      ],
+      "source_locus_id": "a-c7-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Name the quintet of mother sauces that form the basis of French cooking.",
+      "expect_keywords": [
+        "bechamel",
+        "veloute",
+        "hollandaise"
+      ],
+      "source_locus_id": "a-c7-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What are the five classic sauces that French culinary tradition identifies as mother sauces?",
+      "expect_keywords": [
+        "bechamel",
+        "veloute",
+        "hollandaise"
+      ],
+      "source_locus_id": "a-c7-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "List the five primary sauces that French cuisine classifies as mother sauces.",
+      "expect_keywords": [
+        "bechamel",
+        "veloute",
+        "hollandaise"
+      ],
+      "source_locus_id": "a-c7-001",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What high‑protein grain is traditionally used to make genuine Italian pasta?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which type of flour, known for its elevated protein level, forms the basis of authentic Italian pasta?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What ingredient gives traditional Italian pasta its characteristic firm bite, being richer in protein than the flour used for pastries?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "From what kind of coarse flour is classic Italian pasta produced, setting it apart from softer varieties?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-002",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What mixture is traditionally used to flavor the rice for sushi, and how is it prepared?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-003",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which ingredients are combined and heated to season the rice in sushi making?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-003",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How do chefs season sushi rice before shaping it into rolls?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-003",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the typical process for creating the seasoning that goes into sushi rice?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-003",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the role of kneading in forming the elastic network of proteins in bread dough?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which process aligns the proteins glutenin and gliadin to create elasticity in a loaf?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How does the physical manipulation of dough contribute to the development of its stretchy structure?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "During bread making, what action causes specific proteins to bond into a flexible matrix?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-004",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What temperature span and cooking time are commonly employed when using the sous vide method?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In sous vide preparation, what is the usual range of heat and how long does the process typically last?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "For a sous vide dish, what are the standard temperature limits and duration of the water immersion?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "When applying the sous vide technique, what temperature window and time period are generally used for the bath?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-005",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the traditional tempering technique used at the start of a South Indian curry?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which initial step involves frying specific aromatics in a fat medium when making a South Indian curry?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In South Indian cooking, what is the first flavor-building process for a curry?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What combination of spices and herbs is typically sautéed at the beginning of a South Indian curry preparation?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-006",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What chemical process causes the brown crust on seared meat by reacting proteins with sugars at high heat?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which reaction between amino acids and reducing sugars triggers browning when food is cooked above 140 °C?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In cooking, what is the name of the browning phenomenon that occurs when proteins and sugars are heated past a certain temperature?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the term for the heat‑induced interaction of amino acids and reducing sugars that leads to a golden‑brown color in baked goods?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-007",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which traditional sauce is known for containing more than twenty ingredients, including hot peppers, cacao, and various nuts?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the name of the complex Mexican condiment that traditionally blends over twenty components such as chilies, chocolate, and nuts?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Identify the classic sauce that combines a wide array of items—over twenty—including peppers, sweet chocolate, and assorted nuts.",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In Mexican cuisine, which sauce is famed for its intricate recipe featuring dozens of ingredients, notably chilies, chocolate, and nuts?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-008",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What microorganisms are chiefly responsible for fermenting kimchi, and how long does the process usually take at ambient temperature?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "During kimchi fermentation, which type of bacteria dominate and what is the typical duration when kept at room temperature?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How does the fermentation of kimchi occur in terms of bacterial species and time frame under normal kitchen conditions?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which lactic acid bacteria are primary in kimchi's fermentation, and over what period does this happen at room temperature?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-009",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How many total layers are formed in a traditional puff pastry after completing its standard folding process?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What is the number of dough-and-butter layers achieved by the classic six‑fold technique in puff pastry?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In classic puff pastry preparation, how many layers result from folding three layers six times?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "When making a conventional puff pastry, how many layers does the dough‑butter laminate contain after the standard series of folds?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-010",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What causes a cast‑iron pan to become naturally non‑stick over time?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "How does repeated cooking affect the surface of a seasoned iron skillet?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which process gives a cast‑iron skillet its smooth, easy‑release coating after many uses?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Why does a cast‑iron pan develop a protective layer after being heated and oiled repeatedly?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-011",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which popular sandwich condiment is created by dispersing oil droplets in water using a phospholipid from the yellow part of an egg, and can hold up to three‑quarters oil by weight?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-012",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "What culinary preparation results in a stable mixture where oil is the continuous phase, stabilized by a substance derived from egg yolks, and remains stable even when oil makes up 75% of the blend?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-012",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "In cooking, what is the name of the blend that can contain up to 75% oil and is kept together by a natural emulsifier found in egg yolks?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-012",
+      "generated_by": "mercury-2"
+    },
+    {
+      "q": "Which sauce, often used in salads, is formed by creating a fine dispersion of oil in water with the help of a phospholipid from egg yolks, and can tolerate oil levels as high as three‑quarters of its total weight?",
+      "expect_keywords": [
+        "durum",
+        "semolina",
+        "wheat"
+      ],
+      "source_locus_id": "a-c7-012",
+      "generated_by": "mercury-2"
+    }
+  ],
+  "_metadata": {
+    "generated_per_locus": [
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-001",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-002",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-003",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-004",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-005",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-006",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-007",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-008",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-009",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-010",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C5",
+        "locus_id": "a-c5-011",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-001",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-002",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-004",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-005",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-006",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-007",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-008",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-009",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-010",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-011",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C6",
+        "locus_id": "a-c6-012",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-001",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-002",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-003",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-004",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-005",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-006",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-007",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-008",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-009",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-010",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-011",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      },
+      {
+        "corpus": "C7",
+        "locus_id": "a-c7-012",
+        "accepted": 4,
+        "added": 4,
+        "rejected_count": 0
+      }
+    ],
+    "rejected": []
+  },
+  "_generated_at": "2026-05-12T17:35:57Z"
+}
