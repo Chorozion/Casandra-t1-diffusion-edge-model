@@ -72,9 +72,18 @@ def load_adapter_into_model(model, adapter_state: dict, dtype=torch.bfloat16):
 
 def use_extended_corpus():
     """Point eval_mod at the n=172 expanded query set."""
-    extended = ROOT / "queries_heldout_extended_v2.json"
-    eval_mod.QUERIES_EXT = extended
-    print(f"  [eval] using extended corpus: {extended.name}")
+    # v2 file has _metadata / _generated_at top-level keys that the eval
+    # iterator would mistake for query lists. eval_baseline_n172.py writes
+    # the cleaned copy; prefer it, else strip metadata inline.
+    cleaned = ROOT / "queries_heldout_extended_v2_clean.json"
+    if not cleaned.exists():
+        import json as _json
+        src = ROOT / "queries_heldout_extended_v2.json"
+        data = _json.loads(src.read_text(encoding="utf-8"))
+        clean = {k: v for k, v in data.items() if isinstance(v, list)}
+        cleaned.write_text(_json.dumps(clean, indent=2, ensure_ascii=False), encoding="utf-8")
+    eval_mod.QUERIES_EXT = cleaned
+    print(f"  [eval] using cleaned corpus: {cleaned.name}")
 
 
 def eval_one_adapter(adapter_path: Path, base_arm: str = "v2_ltmi_triple"):

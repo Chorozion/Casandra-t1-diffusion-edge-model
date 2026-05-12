@@ -28,14 +28,19 @@ from cassandra_loader import load
 
 
 def main():
-    # Point eval_mod at expanded corpus
-    extended = ROOT / "queries_heldout_extended_v2.json"
-    eval_mod.QUERIES_EXT = extended
-    print(f"[baseline] using extended corpus: {extended.name}")
+    # The v2 corpus contains _metadata + _generated_at top-level keys
+    # that the eval iterator would mistake for query lists. Materialize a
+    # cleaned copy (corpus IDs only) and point eval_mod at it.
+    src = ROOT / "queries_heldout_extended_v2.json"
+    src_data = json.loads(src.read_text(encoding="utf-8"))
+    clean = {k: v for k, v in src_data.items() if isinstance(v, list)}
+    cleaned_path = ROOT / "queries_heldout_extended_v2_clean.json"
+    cleaned_path.write_text(json.dumps(clean, indent=2, ensure_ascii=False), encoding="utf-8")
+    eval_mod.QUERIES_EXT = cleaned_path
+    print(f"[baseline] using cleaned corpus: {cleaned_path.name}")
 
-    queries = json.loads(extended.read_text(encoding="utf-8"))
-    total_q = sum(len(v) for k, v in queries.items() if isinstance(v, list))
-    print(f"[baseline] total queries: {total_q}")
+    total_q = sum(len(v) for v in clean.values())
+    print(f"[baseline] total queries: {total_q} (across {len(clean)} corpora)")
 
     torch.manual_seed(eval_mod.SEED)
 
